@@ -2,57 +2,99 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using IdentityServer4;
 using IdentityServer4.Models;
+using System;
 using System.Collections.Generic;
 
 namespace eTamir.IdentityServer
 {
+
     public static class Config
     {
+        public const string CatalogPermission = "catalog_fullpermission";
+        public const string PhotoStockPermission = "photo_stock_fullpermission";
+        public const string IdentityResourceRole = "roles";
+        public static IEnumerable<ApiResource> ApiResources =>
+                   new ApiResource[]{
+                        new ApiResource("resource_catalog"){
+                            Scopes = {
+                                CatalogPermission
+                            }
+                        },
+                        new ApiResource("resource_photo_stock"){
+                            Scopes = {
+                                PhotoStockPermission
+                            }
+                        },
+                        new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
+                   };
+
         public static IEnumerable<IdentityResource> IdentityResources =>
                    new IdentityResource[]
                    {
-                new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
+                        new IdentityResources.Email(),
+                        new IdentityResources.OpenId(),
+                        new IdentityResources.Profile(),
+                        new IdentityResource(){
+                            Name = IdentityResourceRole,
+                            DisplayName = "Roles",
+                            Description = "User roles",
+                            UserClaims = {
+                                "role"
+                            }
+                        }
                    };
 
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("scope1"),
-                new ApiScope("scope2"),
+                new ApiScope(IdentityServerConstants.LocalApi.ScopeName, ""),
+                new ApiScope(CatalogPermission, "Catalog API için full erişim"),
+                new ApiScope(PhotoStockPermission, "CatalogAPI için full erişim")
             };
+
 
         public static IEnumerable<Client> Clients =>
             new Client[]
             {
-                // m2m client credentials flow client
                 new Client
-                {
-                    ClientId = "m2m.client",
-                    ClientName = "Client Credentials Client",
-
+                {   
+                    ClientName = "React",
+                    ClientId = "React",
+                    ClientSecrets = {
+                        new Secret("secret".Sha256()),
+                    },
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
-
-                    AllowedScopes = { "scope1" }
+                    AllowedScopes = {
+                        CatalogPermission,
+                        PhotoStockPermission,
+                        IdentityServerConstants.LocalApi.ScopeName,
+                    }
                 },
-
-                // interactive client using code flow + pkce
                 new Client
                 {
-                    ClientId = "interactive",
-                    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
-
-                    AllowedGrantTypes = GrantTypes.Code,
-
-                    RedirectUris = { "https://localhost:44300/signin-oidc" },
-                    FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                    PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
-
+                    ClientName = "ReactForUser",
+                    ClientId = "ReactForUser",
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "scope2" }
-                },
+                    ClientSecrets = {
+                        new Secret("secret".Sha256()),
+                    },
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                    AllowedScopes = {
+                        IdentityServerConstants.LocalApi.ScopeName,
+                        IdentityServerConstants.StandardScopes.Email,
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Address,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.OfflineAccess,
+                        IdentityResourceRole,
+                    },
+                    AccessTokenLifetime = TimeSpan.FromHours(1).Hours,
+                    RefreshTokenExpiration = TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime = TimeSpan.FromDays(60).Days,
+                    RefreshTokenUsage = TokenUsage.ReUse
+                }
             };
     }
 }

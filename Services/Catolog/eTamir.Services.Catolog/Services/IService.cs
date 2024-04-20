@@ -11,6 +11,6 @@ namespace eTamir.Services.Catolog.Services
         public Task<Response<T>> CreateAsync(T obj);
         public Task<Response<T>> GetByIdAsync(string id);
         public Task<Response<T>> UpdateAsync(T obj);
-        public Task<Response<NoContent>> DeleteAsync(string id);
+        public Task<Response<Shared.Dtos.NoContent>> DeleteAsync(string id);
     }
 }

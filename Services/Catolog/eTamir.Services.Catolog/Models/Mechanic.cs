@@ -14,7 +14,10 @@ namespace eTamir.Services.Catolog.Models
         [Range(0,5,ErrorMessage ="Puan 0-5 arasında olmalı.")]
         [BsonRepresentation(BsonType.Decimal128)]
         public decimal Rating { get; set; }
+        public string Location{get;set;}
         public string UserId {  get; set; }
+        [BsonRepresentation(BsonType.Boolean)]
+        public bool  Callable { get; set; }
         public string Picture { get; set; }
         [BsonRepresentation(BsonType.DateTime)]
         public DateTime CreatedAt { get; set; }
@@ -22,5 +25,6 @@ namespace eTamir.Services.Catolog.Models
         public string CategoryId { get; set; }
         [BsonIgnore]
         public Category Category { get; set; }
+        public string Photo { get; set; }
     }
 }

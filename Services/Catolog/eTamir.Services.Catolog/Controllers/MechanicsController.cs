@@ -32,6 +32,13 @@ namespace eTamir.Services.Catolog.Controllers
             return CreateActionResult(mechanics);
         }
 
+        [HttpGet("GetAllByCategoryId/{categoryId}")]
+        public async Task<IActionResult> GetAllByCategoryId(string categoryId)
+        {
+            var mechanics = await mechanicService.GetAllByCategoryId(categoryId);
+
+            return CreateActionResult(mechanics);
+        }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {

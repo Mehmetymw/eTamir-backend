@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\eTamir.Service.PhotoStcok.props" />
+</Project>

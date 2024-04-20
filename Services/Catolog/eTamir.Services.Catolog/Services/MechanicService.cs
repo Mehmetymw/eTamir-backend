@@ -35,21 +35,21 @@ namespace eTamir.Services.Catolog.Services
 
         }
 
-        public async Task<Response<NoContent>> DeleteAsync(string id)
+        public async Task<Response<Shared.Dtos.NoContent>> DeleteAsync(string id)
         {
             try
             {
                 var mechanic = await mechanicRepository.Collection
                      .FindOneAndDeleteAsync(t => t.Id == id);
 
-                if (mechanic is null) return Response<NoContent>
+                if (mechanic is null) return Response<Shared.Dtos.NoContent>
                         .Fail("Silinecek tamirci bulunamadı. id:" + id, 404);
 
-                return Response<NoContent>.Success(200);
+                return Response<Shared.Dtos.NoContent>.Success(200);
             }
             catch (Exception ex)
             {
-                return Response<NoContent>.Fail("Tamirci silinirken bir hata oluştu.", 500);
+                return Response<Shared.Dtos.NoContent>.Fail("Tamirci silinirken bir hata oluştu.", 500);
             }
         }
 
@@ -70,6 +70,27 @@ namespace eTamir.Services.Catolog.Services
                     .Fail("Tamirci listesi getirilirken bir hata oluştu. ex:" + ex.ToString(), 500);
             }
 
+        }
+
+        public async Task<Response<List<MechanicDto>>> GetAllByCategoryId(string categoryId)
+        {
+              try
+            {
+                var mechanics = await mechanicRepository.Collection
+                    .Find(t => string.Equals(categoryId, t.CategoryId)).ToListAsync();
+
+                if (mechanics is null || mechanics.Count == 0)
+                    return Response<List<MechanicDto>>.Fail("Bu CategoryId ile oluşturulmuş tamirci bulunamadı. categoryId:" + categoryId, 404);
+
+                return Response<List<MechanicDto>>
+                    .Success(200, mechanicRepository.Mapper.Map<List<MechanicDto>>(mechanics));
+
+            }
+            catch (Exception ex)
+            {
+                return Response<List<MechanicDto>>.Fail("CategoryId ile tamirci listesi aranırken bir hata oluştu. categoryId:" + categoryId, 404);
+
+            }
         }
 
         public async Task<Response<List<MechanicDto>>> GetAllByUserId(string userId)
@@ -114,7 +135,6 @@ namespace eTamir.Services.Catolog.Services
             }
 
         }
-
         public async Task<Response<MechanicDto>> UpdateAsync(MechanicDto obj)
         {
             try

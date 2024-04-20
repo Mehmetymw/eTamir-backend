@@ -92,21 +92,21 @@ namespace eTamir.Services.Catolog.Services
             }
 
         }
-        public async Task<Response<NoContent>> DeleteAsync(string id)
+        public async Task<Response<Shared.Dtos.NoContent>> DeleteAsync(string id)
         {
             try
             {
                 var category = await categoryRepository.Collection
                     .FindOneAndDeleteAsync(t => t.Id == id);
 
-                if (category is null) return Response<NoContent>
+                if (category is null) return Response<Shared.Dtos.NoContent>
                         .Fail("Silinecek kategori bulunamadı. id:" + id, 404);
 
-                return Response<NoContent>.Success(200);
+                return Response<Shared.Dtos.NoContent>.Success(200);
             }
             catch (Exception ex)
             {
-                return Response<NoContent>.Fail("Tamirci silinirken bir hata oluştu.", 500);
+                return Response<Shared.Dtos.NoContent>.Fail("Tamirci silinirken bir hata oluştu.", 500);
             }
         }
     }

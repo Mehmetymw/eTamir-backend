@@ -55,7 +55,9 @@ namespace eTamir.IdentityServer
                     {
                         var user = new ApplicationUser()
                         {
-                            UserName = "mehmetymw",
+                            UserName="mehmetyw@gmail.com",
+                            Name = "MEHMET",
+                            Surname = "YILDIRIM",
                             Email = "mehmetyw@gmail.com",
                         };
 

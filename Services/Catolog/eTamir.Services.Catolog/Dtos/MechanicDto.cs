@@ -11,8 +11,12 @@ namespace eTamir.Services.Catolog.Dtos
         public string Name { get; set; }
         public string Description { get; set; }
         public string Picture { get; set; }
+        public bool Callable { get; set; }
+        public string Location { get; set; }
+        public decimal Rating { get; set; }
         public string UserId { get; set; }
         public DateTime? CreatedAt { get { return DateTime.Now; } }
         public string CategoryId { get; set; }
+        public string Phone { get; set; }
     }
 }

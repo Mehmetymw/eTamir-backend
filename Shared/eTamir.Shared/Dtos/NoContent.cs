@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace eTamir.Shared.Dtos
 {
-    internal class NoContent
+    public class NoContent
     {
 
     }

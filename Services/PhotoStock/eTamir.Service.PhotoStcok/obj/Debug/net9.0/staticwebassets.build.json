@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "BHib5GxRIF4GKMiUQ3LKrV9iGbsuyZ2jqdOG+1OpOBM=",
+  "Source": "eTamir.Service.PhotoStcok",
+  "BasePath": "_content/eTamir.Service.PhotoStcok",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "eTamir.Service.PhotoStcok\\wwwroot",
+      "Source": "eTamir.Service.PhotoStcok",
+      "ContentRoot": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\",
+      "BasePath": "_content/eTamir.Service.PhotoStcok",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\albumart.png",
+      "SourceId": "eTamir.Service.PhotoStcok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\",
+      "BasePath": "_content/eTamir.Service.PhotoStcok",
+      "RelativePath": "Photos/albumart.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\albumart.png"
+    }
+  ]
+}

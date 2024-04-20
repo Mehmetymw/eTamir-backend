@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\albumart.png",
+      "PackagePath": "staticwebassets\\Photos\\albumart.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.eTamir.Service.PhotoStcok.props",
+      "PackagePath": "build\\eTamir.Service.PhotoStcok.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.eTamir.Service.PhotoStcok.props",
+      "PackagePath": "buildMultiTargeting\\eTamir.Service.PhotoStcok.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.eTamir.Service.PhotoStcok.props",
+      "PackagePath": "buildTransitive\\eTamir.Service.PhotoStcok.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.eTamir.Service.PhotoStcok.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

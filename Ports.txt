@@ -1,3 +1,6 @@
 Services:
-	-Category: 5011
+	-Catalog: 5011
+	-PhotoStock: 5012
+
+IdentityServer: 5001
 

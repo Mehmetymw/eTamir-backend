@@ -1,16 +1,17 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
+
 
 namespace eTamir.Shared.Dtos
 {
     public class Response<T> : IResponse<T>
     {
-        public T? Data { get; set; }
+        public T Data { get; set; }
         [JsonIgnore]
         public int StatusCode { get; set; }
         [JsonIgnore]
         public bool IsSuccessful { get; set; }
         public List<string> Errors { get; set; }
-
 
         public static Response<T> Fail(List<string> error, int statusCode)
         {
@@ -25,7 +26,7 @@ namespace eTamir.Shared.Dtos
         {
             return Fail(new List<string> { error }, statusCode);
         }
-        public static Response<T> Success( int statusCode, T? data = default)
+        public static Response<T> Success( int statusCode, T data = default)
         {
             return new Response<T>
             {
