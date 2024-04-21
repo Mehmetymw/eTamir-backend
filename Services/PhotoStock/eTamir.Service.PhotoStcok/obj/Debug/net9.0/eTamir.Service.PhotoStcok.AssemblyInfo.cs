@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTamir.Service.PhotoStcok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+017f678c99a98cac9153e808b3a45755eb642b71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93fcdf0256a5b3d260a75b066c134786ebd0dc52")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTamir.Service.PhotoStcok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTamir.Service.PhotoStcok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

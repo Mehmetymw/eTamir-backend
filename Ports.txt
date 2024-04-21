@@ -1,6 +1,6 @@
 Services:
 	-Catalog: 5011
 	-PhotoStock: 5012
-
+	-Favorites: 5013
 IdentityServer: 5001
 

@@ -1,0 +1,6 @@
+@eTamir.Services.Favorites_HostAddress = http://localhost:5274
+
+GET {{eTamir.Services.Favorites_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

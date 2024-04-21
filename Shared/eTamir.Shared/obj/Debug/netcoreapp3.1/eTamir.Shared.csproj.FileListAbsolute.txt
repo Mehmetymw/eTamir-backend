@@ -17,6 +17,6 @@ C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netc
 C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.AssemblyInfoInputs.cache
 C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.AssemblyInfo.cs
 C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.csproj.CoreCompileInputs.cache
-C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.sourcelink.json
 C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.dll
 C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.pdb
+C:\Users\meshm\Desktop\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.sourcelink.json
