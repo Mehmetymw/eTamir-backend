@@ -9,8 +9,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
+using eTamir.Services.Favorites.Repository;
+using eTamir.Services.Favorites.Dtos;
+using eTamir.Services.Favorites.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAutoMapper(typeof(Program));
 
 var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -29,25 +33,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.Configure<RedisSettings>(builder.Configuration.GetSection(nameof(RedisSettings)));
+builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection(nameof(DatabaseSettings)));
 builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
-builder.Services.AddScoped<IFavService, FavService>();
+builder.Services.AddSingleton<IDatabaseSettings>(sp =>
+    sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
 
-builder.Services.AddSingleton<IRedisSettings>(sp =>
-    sp.GetRequiredService<IOptions<RedisSettings>>().Value);
+builder.Services.AddScoped<IFavsRepository<Favs>,FavsRepository>();
 
-builder.Services.AddSingleton<IRedisService, RedisService>(sp =>
-{
-    var redisSettings = sp.GetRequiredService<IRedisSettings>();
-    var redis = new RedisService(redisSettings.Host, redisSettings.Port);
-    redis.Connect();
-
-    return redis;
-});
-
-
-
+builder.Services.AddScoped<IFavsService, FavsService>();
 
 builder.Services.AddControllers(opt =>
 {

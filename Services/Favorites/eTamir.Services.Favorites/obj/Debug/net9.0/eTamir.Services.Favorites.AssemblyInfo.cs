@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTamir.Services.Favorites")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39a247e9813c5272b8075a44e9049da37067d442")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa10fbfbfc2da8787c5acd0bdd5c2c7ef1be2184")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTamir.Services.Favorites")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTamir.Services.Favorites")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

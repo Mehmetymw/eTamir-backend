@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {}
+    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {}
   },
   "projects": {
-    "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {
+    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
+        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
         "projectName": "eTamir.Services.Favorites",
-        "projectPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
+        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\obj\\",
+        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-                "projectPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+              "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+                "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
               }
             }
           }
@@ -49,6 +49,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -56,6 +60,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.5, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
             },
             "NRedisStack": {
               "target": "Package",
@@ -97,14 +105,14 @@
         }
       }
     },
-    "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",

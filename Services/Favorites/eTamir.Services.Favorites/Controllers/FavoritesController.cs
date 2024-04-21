@@ -19,9 +19,9 @@ namespace eTamir.Services.Favorites.Controllers
     [ApiController]
     public class FavoritesController : CustomControllerBase
     {
-        private readonly IFavService favService;
+        private readonly IFavsService favService;
         private readonly ISharedIdentityService sharedIdentityService;
-        public FavoritesController(ISharedIdentityService sharedIdentityService, IFavService favService)
+        public FavoritesController(ISharedIdentityService sharedIdentityService, IFavsService favService)
         {
             this.sharedIdentityService = sharedIdentityService;
             this.favService = favService;
@@ -33,21 +33,21 @@ namespace eTamir.Services.Favorites.Controllers
         {
             return CreateActionResult(await favService.GetAll(sharedIdentityService.UserId));
         }
-        [HttpPost("get")]
-        public async Task<IActionResult> Get(FavDto favDto)
+        [HttpPost("isFav")]
+        public async Task<IActionResult> IsFav(FavDto favDto)
         {
-             return CreateActionResult(await favService.Get(favDto));
+             return CreateActionResult(await favService.IsFav(sharedIdentityService.UserId,favDto));
         }
         [HttpPost("add")]
         public async Task<IActionResult> Add(FavDto favDto)
         {
-            return CreateActionResult(await favService.Add(favDto));
+            return CreateActionResult(await favService.Add(sharedIdentityService.UserId,favDto));
 
         }
         [HttpDelete]
         public async Task<IActionResult> Delete(FavDto favDto)
         {
-            return CreateActionResult(await favService.Add(favDto));
+            return CreateActionResult(await favService.Delete(sharedIdentityService.UserId,favDto));
         }
     }
 }
