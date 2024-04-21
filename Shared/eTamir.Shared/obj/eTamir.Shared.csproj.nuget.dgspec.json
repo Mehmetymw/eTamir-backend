@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {}
+    "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,10 @@
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [

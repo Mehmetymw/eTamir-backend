@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTamir.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93fcdf0256a5b3d260a75b066c134786ebd0dc52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39a247e9813c5272b8075a44e9049da37067d442")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTamir.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTamir.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

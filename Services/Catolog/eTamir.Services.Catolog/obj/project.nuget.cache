@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UpOQnVtnFIzJsFMOOA0x6t+uhgKUQkduw0pQjliG9zpMv3GGbj+0h8CJJhrIOnFVAnLFkRzxHoqCS7kUwhIXlQ==",
+  "dgSpecHash": "A4jtgwc0n7KWbjCk09ASvXM0kHHRIa2Uc6vSPsa7YGTb2lumdQ0ciMnnkDEBgF1SJqJWfu2YpGZaDDbXcB2F/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
   "expectedPackageFiles": [
@@ -194,11 +194,7 @@
     "C:\\Users\\meshm\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\meshm\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\meshm\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\meshm\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512",
-    "C:\\Users\\meshm\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\meshm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\meshm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512",
-    "C:\\Users\\meshm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.1\\microsoft.netcore.app.host.win-x64.8.0.1.nupkg.sha512"
+    "C:\\Users\\meshm\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": []
 }

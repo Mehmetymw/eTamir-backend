@@ -14,6 +14,7 @@ namespace eTamir.IdentityServer
     {
         public const string CatalogPermission = "catalog_fullpermission";
         public const string PhotoStockPermission = "photo_stock_fullpermission";
+        public const string FavPermission = "fav_fullpermission";
         public const string IdentityResourceRole = "roles";
         public static IEnumerable<ApiResource> ApiResources =>
                    new ApiResource[]{
@@ -25,6 +26,11 @@ namespace eTamir.IdentityServer
                         new ApiResource("resource_photo_stock"){
                             Scopes = {
                                 PhotoStockPermission
+                            }
+                        },
+                        new ApiResource("resource_fav"){
+                            Scopes = {
+                                FavPermission
                             }
                         },
                         new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
@@ -51,7 +57,8 @@ namespace eTamir.IdentityServer
             {
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName, ""),
                 new ApiScope(CatalogPermission, "Catalog API için full erişim"),
-                new ApiScope(PhotoStockPermission, "CatalogAPI için full erişim")
+                new ApiScope(PhotoStockPermission, "PhotoStock API için full erişim"),
+                new ApiScope(FavPermission, "Fav API için full erişim")
             };
 
 
@@ -59,7 +66,7 @@ namespace eTamir.IdentityServer
             new Client[]
             {
                 new Client
-                {   
+                {
                     ClientName = "React",
                     ClientId = "React",
                     ClientSecrets = {
@@ -89,6 +96,7 @@ namespace eTamir.IdentityServer
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.OfflineAccess,
                         IdentityResourceRole,
+                        FavPermission
                     },
                     AccessTokenLifetime = TimeSpan.FromHours(1).Hours,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
