@@ -12,18 +12,19 @@ using System.IdentityModel.Tokens.Jwt;
 
 namespace eTamir.IdentityServer.Controllers
 {
-    [Authorize(LocalApi.PolicyName)]
+        [Authorize(LocalApi.PolicyName)]
+
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserManager<ApplicationUser> userManager;
+          private readonly UserManager<ApplicationUser> userManager;
         public UserController(UserManager<ApplicationUser> userManager)
         {
             this.userManager = userManager;
         }
 
-        [HttpPost]
+ [HttpPost]
         public async Task<IActionResult> SignUp(SignUpDto signUpDto)
         {
             if (signUpDto is null)
@@ -76,8 +77,47 @@ namespace eTamir.IdentityServer.Controllers
             return Ok(appUser);
         }
 
+        // [HttpPost]
+        // public async Task<IActionResult> GoogleLogin(string idToken)
+        // {
+        //     var payload = await GoogleJsonWebSignature.ValidateAsync(idToken);
 
+        //     var user = new ApplicationUser
+        //     {
+        //         UserName = payload.Email,
+        //         Email = payload.Email,
+        //         Name = payload.GivenName,
+        //         Surname = payload.FamilyName
+        //     };
+
+        //     var result = await _userManager.CreateAsync(user);
+
+        //     if (result.Succeeded)
+        //     {
+        //         var claims = new[]
+        //         {
+        //             new Claim(ClaimTypes.NameIdentifier, user.Id),
+        //             new Claim(ClaimTypes.Email, user.Email),
+        //         };
+
+        //         var claimsIdentity = new ClaimsIdentity(
+        //             claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+        //         var authProperties = new AuthenticationProperties
+        //         {
+        //         };
+
+        //         await HttpContext.SignInAsync(
+        //             CookieAuthenticationDefaults.AuthenticationScheme,
+        //             new ClaimsPrincipal(claimsIdentity),
+        //             authProperties);
+
+        //         return Ok();
+        //     }
+        //     else
+        //     {
+        //         return BadRequest();
+        //     }
+        // }
     }
-
-
 }

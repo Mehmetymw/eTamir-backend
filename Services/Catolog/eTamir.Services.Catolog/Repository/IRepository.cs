@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using eTamir.Services.Catolog.Models;
 using MongoDB.Driver;
 
 namespace eTamir.Services.Catolog.Repository

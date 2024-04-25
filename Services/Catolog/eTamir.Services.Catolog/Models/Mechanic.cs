@@ -26,5 +26,6 @@ namespace eTamir.Services.Catolog.Models
         [BsonIgnore]
         public Category Category { get; set; }
         public string Photo { get; set; }
+        public WorkingHours WorkingHours { get; set; }
     }
 }

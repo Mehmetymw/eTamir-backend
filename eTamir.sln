@@ -30,6 +30,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTamir.Services.Favorites",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTamir.Shared", "Shared\eTamir.Shared\eTamir.Shared.csproj", "{C83143EE-87C5-44A7-8DC8-9BD84323586A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Appointment", "Appointment", "{6E0DC4C7-5B01-4C57-BAC8-D75C2DDA7826}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTamir.Services.Appointment", "Services\Appointment\eTamir.Services.Appointment\eTamir.Services.Appointment.csproj", "{AA2B44F3-221C-4D4F-B476-320C5BB2D374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{DC8633F6-AD03-4E22-B148-CEC825FAE02B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTamir.Gateway", "Gateways\eTamir.Gateway\eTamir.Gateway.csproj", "{A862756D-3EBA-437F-B2BB-830D78B885BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +64,14 @@ Global
 		{C83143EE-87C5-44A7-8DC8-9BD84323586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C83143EE-87C5-44A7-8DC8-9BD84323586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83143EE-87C5-44A7-8DC8-9BD84323586A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2B44F3-221C-4D4F-B476-320C5BB2D374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2B44F3-221C-4D4F-B476-320C5BB2D374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2B44F3-221C-4D4F-B476-320C5BB2D374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2B44F3-221C-4D4F-B476-320C5BB2D374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A862756D-3EBA-437F-B2BB-830D78B885BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A862756D-3EBA-437F-B2BB-830D78B885BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A862756D-3EBA-437F-B2BB-830D78B885BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A862756D-3EBA-437F-B2BB-830D78B885BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +85,9 @@ Global
 		{96DEE955-6D88-4335-B5DF-DB2BDBD9A9BA} = {329BABD8-D634-47AF-B72F-BA3195673921}
 		{3EFF8E58-D87B-40E0-ADA8-75CE0FDD33BE} = {96DEE955-6D88-4335-B5DF-DB2BDBD9A9BA}
 		{C83143EE-87C5-44A7-8DC8-9BD84323586A} = {C27375F4-DB31-4D85-92DC-72A2A7A0CB86}
+		{6E0DC4C7-5B01-4C57-BAC8-D75C2DDA7826} = {329BABD8-D634-47AF-B72F-BA3195673921}
+		{AA2B44F3-221C-4D4F-B476-320C5BB2D374} = {6E0DC4C7-5B01-4C57-BAC8-D75C2DDA7826}
+		{A862756D-3EBA-437F-B2BB-830D78B885BA} = {DC8633F6-AD03-4E22-B148-CEC825FAE02B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D1C4BBA-B092-4798-B37C-CF48A1819823}

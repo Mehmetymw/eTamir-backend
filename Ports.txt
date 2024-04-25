@@ -2,5 +2,8 @@ Services:
 	-Catalog: 5011
 	-PhotoStock: 5012
 	-Favorites: 5013
+	-Appointment: 5014
+
 IdentityServer: 5001
 
+Gateway: 5000

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jWUV6/Luq1JZy099qqJkhxmkelg1YZVnMqO2pHpnFrI=",
+  "Source": "eTamir.Gateway",
+  "BasePath": "_content/eTamir.Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

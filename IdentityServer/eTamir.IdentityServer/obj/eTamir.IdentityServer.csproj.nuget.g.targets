@@ -2,6 +2,8 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)system.diagnostics.diagnosticsource\7.0.2\buildTransitive\netcoreapp2.0\System.Diagnostics.DiagnosticSource.targets" Condition="Exists('$(NuGetPackageRoot)system.diagnostics.diagnosticsource\7.0.2\buildTransitive\netcoreapp2.0\System.Diagnostics.DiagnosticSource.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.codedom\7.0.0\buildTransitive\netcoreapp2.0\System.CodeDom.targets" Condition="Exists('$(NuGetPackageRoot)system.codedom\7.0.0\buildTransitive\netcoreapp2.0\System.CodeDom.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.management\7.0.2\buildTransitive\netcoreapp2.0\System.Management.targets" Condition="Exists('$(NuGetPackageRoot)system.management\7.0.2\buildTransitive\netcoreapp2.0\System.Management.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\3.1.5\buildTransitive\Microsoft.AspnetCore.Identity.UI.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\3.1.5\buildTransitive\Microsoft.AspnetCore.Identity.UI.targets')" />
   </ImportGroup>
 </Project>

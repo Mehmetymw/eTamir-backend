@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {}
+    "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {
+    "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
         "projectName": "eTamir.IdentityServer",
-        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
+        "projectPath": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-                "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+              "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+                "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
               }
             }
           }
@@ -49,6 +49,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
             "IdentityServer4.AspNetIdentity": {
               "target": "Package",
               "version": "[4.0.0, )"
@@ -111,14 +115,14 @@
         }
       }
     },
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",

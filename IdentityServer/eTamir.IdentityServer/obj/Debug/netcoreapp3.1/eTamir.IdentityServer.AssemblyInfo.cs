@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTamir.IdentityServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39a247e9813c5272b8075a44e9049da37067d442")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4201a88d9d2fd9a681068a32b8af83d6714761b")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTamir.IdentityServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTamir.IdentityServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

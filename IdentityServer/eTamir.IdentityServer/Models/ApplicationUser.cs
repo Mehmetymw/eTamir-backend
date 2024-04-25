@@ -6,9 +6,13 @@ namespace eTamir.IdentityServer.Models
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser
     {
-        [Required]
+        // [Required]
         public string Name{ get; set;}
-        [Required]
+        // [Required]
         public string Surname{ get; set;}
+
+        // [Required]
+        public string CountryCode { get; set; }
+
     }
 }

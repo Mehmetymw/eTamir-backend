@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "47Xj71KJ+7of7WrNJHdVoSZsqrkOdTztTzYmEQiUMxOKa1qQQboHAD1+L+T/E2E2OiynzZepZ13u17jEzynznA==",
+  "dgSpecHash": "FghL1K0Jv36Dtx0w0BVhR71s/oqa/uomeNPLfT9/y9eawvlcNRBRq2eJBs/hU8s5tTq83MpVSVnawla69sARzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj",
+  "projectFilePath": "D:\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meshm\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\meshm\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj": {}
+    "D:\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj": {
+    "D:\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj",
         "projectName": "eTamir.Service.PhotoStcok",
-        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj",
+        "projectPath": "D:\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\eTamir.Service.PhotoStcok.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-                "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+              "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+                "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",

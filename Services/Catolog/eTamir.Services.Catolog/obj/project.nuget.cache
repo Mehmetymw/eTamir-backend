@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A4jtgwc0n7KWbjCk09ASvXM0kHHRIa2Uc6vSPsa7YGTb2lumdQ0ciMnnkDEBgF1SJqJWfu2YpGZaDDbXcB2F/A==",
+  "dgSpecHash": "DBtAv8Ha6+dsYslWNx7oRKcAGdSFybgQAinZqc2rn8uaAEVaiPKO06E0PZe1yZR6ZP33imxF9HdNFxeKmvHZkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
+  "projectFilePath": "D:\\eTamir\\eTamir.backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meshm\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\meshm\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",

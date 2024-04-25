@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2KADsjTu4knR+KgR7I3uEoqEEtQv+5Ls4O3M4ckHNVXWJyQeHCf7Dy557rqkWCy1YCsZRGBIDZv2ALJQZ8XB9Q==",
+  "dgSpecHash": "brh+zBRgvBZe16gDO1XA/xXrERepNuwmEjoSUrO0spX5KaezRmk1p47DwWK7KUXgEe4ThORWhwT3JZ077nlzvQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+  "projectFilePath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meshm\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\meshm\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

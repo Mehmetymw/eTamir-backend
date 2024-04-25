@@ -15,6 +15,8 @@ namespace eTamir.IdentityServer
         public const string CatalogPermission = "catalog_fullpermission";
         public const string PhotoStockPermission = "photo_stock_fullpermission";
         public const string FavPermission = "fav_fullpermission";
+        public const string AppointmetnPermission = "appointment_fullpermission";
+        public const string GatewayPermission = "gateway_fullpermission";
         public const string IdentityResourceRole = "roles";
         public static IEnumerable<ApiResource> ApiResources =>
                    new ApiResource[]{
@@ -31,6 +33,16 @@ namespace eTamir.IdentityServer
                         new ApiResource("resource_fav"){
                             Scopes = {
                                 FavPermission
+                            }
+                        },
+                        new ApiResource("resource_appointment"){
+                            Scopes = {
+                                AppointmetnPermission
+                            }
+                        },
+                        new ApiResource("resource_gateway"){
+                            Scopes = {
+                                GatewayPermission
                             }
                         },
                         new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
@@ -58,7 +70,9 @@ namespace eTamir.IdentityServer
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName, ""),
                 new ApiScope(CatalogPermission, "Catalog API için full erişim"),
                 new ApiScope(PhotoStockPermission, "PhotoStock API için full erişim"),
-                new ApiScope(FavPermission, "Fav API için full erişim")
+                new ApiScope(FavPermission, "Fav API için full erişim"),
+                new ApiScope(AppointmetnPermission, "Appointment API için full erişim"),
+                new ApiScope(GatewayPermission, "Gateway API için full erişim")
             };
 
 
@@ -74,6 +88,7 @@ namespace eTamir.IdentityServer
                     },
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     AllowedScopes = {
+                        GatewayPermission,
                         CatalogPermission,
                         PhotoStockPermission,
                         IdentityServerConstants.LocalApi.ScopeName,
@@ -95,13 +110,28 @@ namespace eTamir.IdentityServer
                         IdentityServerConstants.StandardScopes.Address,
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.OfflineAccess,
+                        CatalogPermission,
+                        PhotoStockPermission,
                         IdentityResourceRole,
-                        FavPermission
+                        FavPermission,
+                        AppointmetnPermission,
+                        GatewayPermission,
                     },
                     AccessTokenLifetime = TimeSpan.FromHours(1).Hours,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
                     AbsoluteRefreshTokenLifetime = TimeSpan.FromDays(60).Days,
                     RefreshTokenUsage = TokenUsage.ReUse
+                },
+               new Client
+                {
+                    ClientId = "google",
+                    ClientName = "Google",
+                    ClientSecrets = { new Secret("your-google-client-secret".Sha256()) },
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RedirectUris = { "https://your-redirect-uri.com" },
+                    AllowedScopes = { "openid", "profile", "email" }, 
+                    RequirePkce = true,
+                    AllowPlainTextPkce = false
                 }
             };
     }
