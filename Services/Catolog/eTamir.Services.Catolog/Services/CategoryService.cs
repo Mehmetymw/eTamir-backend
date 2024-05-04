@@ -14,7 +14,7 @@ namespace eTamir.Services.Catolog.Services
     {
         private readonly CategoryRepository categoryRepository;
         private readonly IOptions<IDatabaseSettings> databaseSettings;
-        public CategoryService(CategoryRepository categoryRepository,IOptions<IDatabaseSettings> databaseSettings)
+        public CategoryService(CategoryRepository categoryRepository, IOptions<IDatabaseSettings> databaseSettings)
         {
             this.databaseSettings = databaseSettings;
             this.categoryRepository = categoryRepository;
@@ -36,6 +36,8 @@ namespace eTamir.Services.Catolog.Services
             }
 
         }
+
+
         public async Task<Response<CategoryDto>> CreateAsync(CategoryDto obj)
         {
             try
@@ -44,7 +46,7 @@ namespace eTamir.Services.Catolog.Services
                     .InsertOneAsync(categoryRepository.Mapper.Map<Category>(obj));
 
                 return Response<CategoryDto>
-                    .Success(200,obj);
+                    .Success(200, obj);
             }
             catch (Exception ex)
             {
@@ -80,7 +82,7 @@ namespace eTamir.Services.Catolog.Services
                     categoryRepository.Mapper.Map<Category>(obj));
 
                 if (category is null) return Response<CategoryDto>
-                        .Fail("Update edilecek kategori bulunamadı. id:" + obj.Id,404);
+                        .Fail("Update edilecek kategori bulunamadı. id:" + obj.Id, 404);
 
                 return Response<CategoryDto>
                     .Success(200, categoryRepository.Mapper.Map<CategoryDto>(category));
@@ -108,6 +110,25 @@ namespace eTamir.Services.Catolog.Services
             {
                 return Response<Shared.Dtos.NoContent>.Fail("Tamirci silinirken bir hata oluştu.", 500);
             }
+        }
+
+        public async Task<Response<List<CategoryDto>>> GetCategoiesByCatalogId(string catalogId)
+        {
+            try
+            {
+                var category = await categoryRepository.Collection
+                .Find(t => t.CatalogId == catalogId).ToListAsync();
+
+                if (category is null) return Response<List<CategoryDto>>.Fail($"{catalogId}catalog idli kategori bulunamadı", 404);
+
+                return Response<List<CategoryDto>>
+                    .Success(200, categoryRepository.Mapper.Map<List<CategoryDto>>(category));
+            }
+            catch (Exception ex)
+            {
+                return Response<List<CategoryDto>>.Fail($"{catalogId} catalog'idli kategori bulunamadı. ex:" + ex.ToString(), 500);
+            }
+
         }
     }
 }

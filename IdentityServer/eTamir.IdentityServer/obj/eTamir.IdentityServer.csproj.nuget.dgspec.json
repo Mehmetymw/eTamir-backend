@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {}
+    "D:\\eTamir\\eTamir-backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {}
   },
   "projects": {
-    "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {
+    "D:\\eTamir\\eTamir-backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir-backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
         "projectName": "eTamir.IdentityServer",
-        "projectPath": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
+        "projectPath": "D:\\eTamir\\eTamir-backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir-backend\\IdentityServer\\eTamir.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-                "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+              "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+                "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
               }
             }
           }
@@ -111,18 +111,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,7 +181,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13\\RuntimeIdentifierGraph.json"
         }
       }
     }

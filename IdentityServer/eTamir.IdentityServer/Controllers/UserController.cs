@@ -12,19 +12,19 @@ using System.IdentityModel.Tokens.Jwt;
 
 namespace eTamir.IdentityServer.Controllers
 {
-        [Authorize(LocalApi.PolicyName)]
+    [Authorize(LocalApi.PolicyName)]
 
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class UserController : ControllerBase
     {
-          private readonly UserManager<ApplicationUser> userManager;
+        private readonly UserManager<ApplicationUser> userManager;
         public UserController(UserManager<ApplicationUser> userManager)
         {
             this.userManager = userManager;
         }
 
- [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> SignUp(SignUpDto signUpDto)
         {
             if (signUpDto is null)

@@ -26,7 +26,7 @@ namespace eTamir.Shared.Dtos
         {
             return Fail(new List<string> { error }, statusCode);
         }
-        public static Response<T> Success( int statusCode, T data = default)
+        public static Response<T> Success(int statusCode, T data = default)
         {
             return new Response<T>
             {

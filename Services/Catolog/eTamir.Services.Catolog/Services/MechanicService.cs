@@ -35,6 +35,26 @@ namespace eTamir.Services.Catolog.Services
 
         }
 
+        public async Task<Response<Shared.Dtos.NoContent>> CreateByUserId(MechanicDto obj, string userId)
+        {
+            try
+            {
+                if (userId is null) return Response<Shared.Dtos.NoContent>
+                        .Fail("UserId boş olamaz.", 404);
+
+                obj.UserId = userId;
+                await mechanicRepository.Collection
+                    .InsertOneAsync(mechanicRepository.Mapper.Map<Mechanic>(obj));
+
+                return Response<Shared.Dtos.NoContent>.Success(200);
+            }
+            catch (Exception ex)
+            {
+                return Response<Shared.Dtos.NoContent>
+                    .Fail("Tamirci oluşturulurken bir hata oluştu. ex:" + ex.ToString(), 500);
+            }
+        }
+
         public async Task<Response<Shared.Dtos.NoContent>> DeleteAsync(string id)
         {
             try
@@ -74,7 +94,7 @@ namespace eTamir.Services.Catolog.Services
 
         public async Task<Response<List<MechanicDto>>> GetAllByCategoryId(string categoryId)
         {
-              try
+            try
             {
                 var mechanics = await mechanicRepository.Collection
                     .Find(t => string.Equals(categoryId, t.CategoryId)).ToListAsync();
@@ -111,6 +131,25 @@ namespace eTamir.Services.Catolog.Services
             {
                 return Response<List<MechanicDto>>.Fail("UserId ile tamirci listesi aranırken bir hata oluştu. userId:" + userId, 404);
 
+            }
+        }
+
+        public async Task<Response<List<MechanicDto>>> GetPagesByCategoryId(string categoryId, int page, int pageSize)
+        {
+            try
+            {
+                var mechanics = await mechanicRepository.Collection
+                    .Find(t => string.Equals(categoryId, t.CategoryId)).Skip((page - 1) * pageSize).Limit(pageSize).ToListAsync();
+
+
+                return Response<List<MechanicDto>>
+                    .Success(200, mechanicRepository.Mapper.Map<List<MechanicDto>>(mechanics));
+
+            }
+            catch (Exception ex)
+            {
+                return Response<List<MechanicDto>>
+                    .Fail("Tamirci listesi getirilirken bir hata oluştu. ex:" + ex.ToString(), 500);
             }
         }
 
@@ -155,6 +194,27 @@ namespace eTamir.Services.Catolog.Services
                     .Fail("Tamirci update edilirken bir hata oluştu id:" + obj.Id, 500);
             }
 
+        }
+
+        public async Task<Response<List<MechanicDto>>> GetPagesByMechanicName(string mechanicName, string categoryId, int page, int pageSize)
+        {
+            try
+            {
+                if(string.IsNullOrEmpty(mechanicName)) return await GetAllByCategoryId(categoryId);
+
+                var mechanics = await mechanicRepository.Collection
+                    .Find(t => t.Name.Contains(mechanicName, StringComparison.CurrentCultureIgnoreCase)).Skip((page - 1) * pageSize).Limit(pageSize).ToListAsync();
+
+
+                return Response<List<MechanicDto>>
+                    .Success(200, mechanicRepository.Mapper.Map<List<MechanicDto>>(mechanics));
+
+            }
+            catch (Exception ex)
+            {
+                return Response<List<MechanicDto>>
+                    .Fail("Tamirci listesi getirilirken bir hata oluştu. ex:" + ex.ToString(), 500);
+            }
         }
     }
 }

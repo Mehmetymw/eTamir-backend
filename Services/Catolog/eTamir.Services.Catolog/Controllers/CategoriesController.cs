@@ -31,6 +31,13 @@ namespace eTamir.Services.Catolog.Controllers
             return CreateActionResult(category);
         }
 
+        [HttpGet("GetCategoiesByCatalogId/{catalogId}")]
+        public async Task<IActionResult> GetCategoiesByCatalogId(string catalogId)
+        {
+            var category = await categoryService.GetCategoiesByCatalogId(catalogId);
+
+            return CreateActionResult(category);
+        }
         [HttpPost]
         public async Task<IActionResult> Create(CategoryDto category)
         {
@@ -49,7 +56,7 @@ namespace eTamir.Services.Catolog.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(string id)
         {
-            var response =await categoryService.DeleteAsync(id);
+            var response = await categoryService.DeleteAsync(id);
 
             return CreateActionResult(response);
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\eTamir\\eTamir.backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj": {}
+    "D:\\eTamir\\eTamir-backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj": {}
   },
   "projects": {
-    "D:\\eTamir\\eTamir.backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj": {
+    "D:\\eTamir\\eTamir-backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj",
         "projectName": "eTamir.Services.Appointment",
-        "projectPath": "D:\\eTamir\\eTamir.backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj",
+        "projectPath": "D:\\eTamir\\eTamir-backend\\Services\\Appointment\\eTamir.Services.Appointment\\eTamir.Services.Appointment.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "D:\\eTamir\\eTamir.backend\\Services\\Appointment\\eTamir.Services.Appointment\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir-backend\\Services\\Appointment\\eTamir.Services.Appointment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-                "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+              "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+                "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
               }
             }
           }
@@ -89,18 +89,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,7 +159,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13\\RuntimeIdentifierGraph.json"
         }
       }
     }

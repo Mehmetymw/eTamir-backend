@@ -8,7 +8,7 @@ namespace eTamir.IdentityServer.Dtos
         private string name;
         private string surname;
         private string phoneNumber;
-        private string countryCode;
+        private byte countryCode;
 
         // [Required]
         public string Name
@@ -38,9 +38,7 @@ namespace eTamir.IdentityServer.Dtos
         }
 
         // [Required(ErrorMessage = "Country code is required.")]
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Country code must contain only numbers.")]
-        [MaxLength(4, ErrorMessage = "Phone number cannot be more than 3 digits.")]
-        public string CountryCode
+        public byte CountryCode
         {
             get { return countryCode; }
             set { countryCode = value; }

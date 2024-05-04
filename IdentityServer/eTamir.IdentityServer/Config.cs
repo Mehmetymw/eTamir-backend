@@ -13,6 +13,7 @@ namespace eTamir.IdentityServer
     public static class Config
     {
         public const string CatalogPermission = "catalog_fullpermission";
+        public const string AddressPermission = "address_fullpermission";
         public const string PhotoStockPermission = "photo_stock_fullpermission";
         public const string FavPermission = "fav_fullpermission";
         public const string AppointmetnPermission = "appointment_fullpermission";
@@ -25,6 +26,12 @@ namespace eTamir.IdentityServer
                                 CatalogPermission
                             }
                         },
+                        new ApiResource("resource_address"){
+                            Scopes = {
+                                AddressPermission
+                            }
+                        },
+
                         new ApiResource("resource_photo_stock"){
                             Scopes = {
                                 PhotoStockPermission
@@ -72,7 +79,8 @@ namespace eTamir.IdentityServer
                 new ApiScope(PhotoStockPermission, "PhotoStock API için full erişim"),
                 new ApiScope(FavPermission, "Fav API için full erişim"),
                 new ApiScope(AppointmetnPermission, "Appointment API için full erişim"),
-                new ApiScope(GatewayPermission, "Gateway API için full erişim")
+                new ApiScope(GatewayPermission, "Gateway API için full erişim"),
+                new ApiScope(AddressPermission, "Address API için full erişim")
             };
 
 
@@ -91,6 +99,7 @@ namespace eTamir.IdentityServer
                         GatewayPermission,
                         CatalogPermission,
                         PhotoStockPermission,
+                        AddressPermission,
                         IdentityServerConstants.LocalApi.ScopeName,
                     }
                 },
@@ -116,23 +125,13 @@ namespace eTamir.IdentityServer
                         FavPermission,
                         AppointmetnPermission,
                         GatewayPermission,
+                        AddressPermission
                     },
-                    AccessTokenLifetime = TimeSpan.FromHours(1).Hours,
+                    AccessTokenLifetime = 1 * 60 * 60,
                     RefreshTokenExpiration = TokenExpiration.Absolute,
-                    AbsoluteRefreshTokenLifetime = TimeSpan.FromDays(60).Days,
+                    AbsoluteRefreshTokenLifetime =  1 * 60 * 60* 24*60,
                     RefreshTokenUsage = TokenUsage.ReUse
                 },
-               new Client
-                {
-                    ClientId = "google",
-                    ClientName = "Google",
-                    ClientSecrets = { new Secret("your-google-client-secret".Sha256()) },
-                    AllowedGrantTypes = GrantTypes.Code,
-                    RedirectUris = { "https://your-redirect-uri.com" },
-                    AllowedScopes = { "openid", "profile", "email" }, 
-                    RequirePkce = true,
-                    AllowPlainTextPkce = false
-                }
             };
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {}
+    "D:\\eTamir\\eTamir-backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {}
   },
   "projects": {
-    "D:\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {
+    "D:\\eTamir\\eTamir-backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
         "projectName": "eTamir.Services.Favorites",
-        "projectPath": "D:\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
+        "projectPath": "D:\\eTamir\\eTamir-backend\\Services\\Favorites\\eTamir.Services.Favorites\\eTamir.Services.Favorites.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "D:\\eTamir\\eTamir.backend\\Services\\Favorites\\eTamir.Services.Favorites\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir-backend\\Services\\Favorites\\eTamir.Services.Favorites\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-                "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+              "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+                "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
               }
             }
           }
@@ -101,18 +101,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+    "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "projectName": "eTamir.Shared",
-        "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
+        "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj",
         "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-        "outputPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\obj\\",
+        "outputPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -171,7 +171,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13\\RuntimeIdentifierGraph.json"
         }
       }
     }

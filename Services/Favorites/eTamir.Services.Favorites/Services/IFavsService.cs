@@ -6,10 +6,10 @@ namespace eTamir.Services.Favorites.Services
 {
     public interface IFavsService
     {
-        Task<Response<List<FavsDto>>> GetAll(string userId);
-        Task<Response<bool>> IsFav(string userId,FavDto favDto);
-        Task<Response<NoContent>> Add(string userId,FavDto favDto);
-        Task<Response<NoContent>> Delete(string userId, FavDto favDto);
+        Task<Response<FavsDto>> GetAll(string userId);
+        Task<Response<bool>> IsFav(string userId,string mechanicId);
+        Task<Response<NoContent>> Add(string userId,string mechanicId);
+        Task<Response<NoContent>> Delete(string userId, string mechanicId);
         
     }
 }

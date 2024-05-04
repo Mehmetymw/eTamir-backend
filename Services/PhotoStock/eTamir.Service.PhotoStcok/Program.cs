@@ -17,12 +17,16 @@ builder.Services.AddCors(options =>
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options => {
+    .AddJwtBearer(options =>
+    {
         options.Authority = builder.Configuration["IdentityServer:Url"];
         options.Audience = builder.Configuration["IdentityServer:Audience"];
+        options.TokenValidationParameters.ValidateIssuer = false;
+        options.RequireHttpsMetadata = false;
     });
 
-builder.Services.AddControllers(opt => {
+builder.Services.AddControllers(opt =>
+{
     opt.Filters.Add(new AuthorizeFilter());
 });
 
@@ -38,7 +42,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
 app.UseAuthentication();

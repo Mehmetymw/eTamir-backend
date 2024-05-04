@@ -24,6 +24,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         options.Authority = builder.Configuration["IdentityServer:Url"];
         options.Audience = builder.Configuration["IdentityServer:Audience"];
+        options.RequireHttpsMetadata = false;
+      
     });
 
 
@@ -58,7 +60,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.MapControllers();
 app.UseAuthorization();
 app.UseAuthentication();

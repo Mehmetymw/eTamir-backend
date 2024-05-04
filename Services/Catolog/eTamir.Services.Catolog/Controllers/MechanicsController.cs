@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using eTamir.Shared.Controller;
 using eTamir.Services.Catolog.Services;
 using eTamir.Services.Catolog.Dtos;
+using System.Security.Claims;
+using eTamir.Shared.Dtos;
+using eTamir.Shared.Services;
 
 namespace eTamir.Services.Catolog.Controllers
 {
@@ -11,9 +14,14 @@ namespace eTamir.Services.Catolog.Controllers
     public class MechanicsController : CustomControllerBase
     {
         readonly IMechanicService<MechanicDto> mechanicService;
-        public MechanicsController(IMechanicService<MechanicDto> mechanicService)
+        private readonly IHttpContextAccessor httpContextAccessor;
+        private readonly ISharedIdentityService sharedIdentityService;
+
+        public MechanicsController(IMechanicService<MechanicDto> mechanicService, IHttpContextAccessor httpContextAccessor, ISharedIdentityService sharedIdentityService)
         {
             this.mechanicService = mechanicService;
+            this.httpContextAccessor = httpContextAccessor;
+            this.sharedIdentityService = sharedIdentityService;
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -23,7 +31,6 @@ namespace eTamir.Services.Catolog.Controllers
             return CreateActionResult(mechanics);
         }
 
-        //TODO users api'ye alınacak
         [HttpGet("GetAllByUserId/{userId}")]
         public async Task<IActionResult> GetAllByUserId(string userId)
         {
@@ -32,6 +39,21 @@ namespace eTamir.Services.Catolog.Controllers
             return CreateActionResult(mechanics);
         }
 
+        [HttpGet("GetPagesByCategoryId/{categoryId}/{page}/{pageSize}")]
+        public async Task<IActionResult> GetPagesByCategoryId(string categoryId, int page, int pageSize)
+        {
+            var mechanics = await mechanicService.GetPagesByCategoryId(categoryId, page, pageSize);
+
+            return CreateActionResult(mechanics);
+        }
+
+        [HttpGet("GetPagesByMechanicName/{mechanicName}/{categoryId}/{page}/{pageSize}")]
+        public async Task<IActionResult> GetPagesByMechanicName(string mechanicName, string categoryId, int page, int pageSize)
+        {
+            var mechanics = await mechanicService.GetPagesByMechanicName(mechanicName,categoryId, page, pageSize);
+
+            return CreateActionResult(mechanics);
+        }
         [HttpGet("GetAllByCategoryId/{categoryId}")]
         public async Task<IActionResult> GetAllByCategoryId(string categoryId)
         {
@@ -50,7 +72,11 @@ namespace eTamir.Services.Catolog.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(MechanicDto mechanic)
         {
-            var newMechanic = await mechanicService.CreateAsync(mechanic);
+            var userId = httpContextAccessor?.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (userId is null) CreateActionResult<NoContent>(null);
+
+            var newMechanic = await mechanicService.CreateByUserId(mechanic, userId);
 
             return CreateActionResult(newMechanic);
         }

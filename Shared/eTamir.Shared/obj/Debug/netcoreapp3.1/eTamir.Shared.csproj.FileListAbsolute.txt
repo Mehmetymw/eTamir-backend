@@ -31,3 +31,14 @@ D:\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Sha
 D:\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.sourcelink.json
 D:\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.dll
 D:\eTamir\eTamir.backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.pdb
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\bin\Debug\netcoreapp3.1\eTamir.Shared.deps.json
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\bin\Debug\netcoreapp3.1\eTamir.Shared.dll
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\bin\Debug\netcoreapp3.1\eTamir.Shared.pdb
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.csproj.AssemblyReference.cache
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.AssemblyInfoInputs.cache
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.AssemblyInfo.cs
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.csproj.CoreCompileInputs.cache
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.sourcelink.json
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.dll
+D:\eTamir\eTamir-backend\Shared\eTamir.Shared\obj\Debug\netcoreapp3.1\eTamir.Shared.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pnL3Mvew/LgEG83uCsA7O26/AWM4n+2JGSYUWWIOV9praanYbzJ89A9A8FRS67Vw7jqVxqt1cDFhnQ/y6sw0Tg==",
+  "dgSpecHash": "KHv1oLff0Hc=",
   "success": true,
-  "projectFilePath": "D:\\eTamir\\eTamir.backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
+  "projectFilePath": "D:\\eTamir\\eTamir-backend\\IdentityServer\\eTamir.IdentityServer\\eTamir.IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meshm\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\meshm\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",

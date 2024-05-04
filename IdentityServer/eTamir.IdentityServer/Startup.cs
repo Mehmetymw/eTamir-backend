@@ -70,13 +70,7 @@ namespace eTamir.IdentityServer
                             .AllowAnyMethod();
                     });
             });
-            services.AddAuthentication()
-                .AddGoogle(options =>
-                {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                    options.ClientId = Configuration["ExternalLoginInfos:Google:ClientId"];
-                    options.ClientSecret = Configuration["ExternalLoginInfos:Google:ClientSecret"];
-                });
+       
         }
 
         public void Configure(IApplicationBuilder app)

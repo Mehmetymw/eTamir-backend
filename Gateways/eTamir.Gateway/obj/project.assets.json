@@ -823,11 +823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Gateways\\eTamir.Gateway\\eTamir.Gateway.csproj",
+      "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Gateways\\eTamir.Gateway\\eTamir.Gateway.csproj",
       "projectName": "eTamir.Gateway",
-      "projectPath": "D:\\eTamir\\eTamir.backend\\Gateways\\eTamir.Gateway\\eTamir.Gateway.csproj",
+      "projectPath": "D:\\eTamir\\eTamir-backend\\Gateways\\eTamir.Gateway\\eTamir.Gateway.csproj",
       "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-      "outputPath": "D:\\eTamir\\eTamir.backend\\Gateways\\eTamir.Gateway\\obj\\",
+      "outputPath": "D:\\eTamir\\eTamir-backend\\Gateways\\eTamir.Gateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -889,7 +889,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

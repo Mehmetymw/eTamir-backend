@@ -6,11 +6,11 @@ namespace eTamir.Services.Favorites.Models
     {
         [BsonId]
         public string UserId { get; set; }
-        [BsonElement("FavItems")]
-        public List<FavItem> FavItems { get; set; }
+        [BsonElement("FavMechanicIds")]
+        public List<string> FavMechanicIds { get; set; }
         public Favs()
         {
-            FavItems = new List<FavItem>();
+            FavMechanicIds = new List<string>();
         }
     }
 }

@@ -10,7 +10,6 @@ namespace eTamir.Services.Favorites.Mapping
         {
             CreateMap<Favs, FavsDto>().ReverseMap();
             CreateMap<Fav, FavDto>().ReverseMap();
-            CreateMap<FavItem, FavItemDto>().ReverseMap();
         }
     }
 }

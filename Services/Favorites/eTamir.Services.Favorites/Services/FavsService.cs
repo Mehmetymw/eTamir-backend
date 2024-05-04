@@ -22,7 +22,7 @@ namespace eTamir.Services.Favorites.Services
             this.favsRepository = favsRepository;
         }
 
-        public async Task<Response<NoContent>> Add(string userId,FavDto favDto)
+        public async Task<Response<NoContent>> Add(string userId, string mechanicId)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace eTamir.Services.Favorites.Services
                     .Find(x => x.UserId == userId)
                     .FirstOrDefaultAsync();
 
-                if (favs != null && favs.FavItems.Any(t => t.MechanicId == favDto.FavItem.MechanicId))
+                if (favs != null && favs.FavMechanicIds.Any(t => t == mechanicId))
                 {
                     return Response<NoContent>.Fail("This mechanic is already in your favorites", 400);
                 }
@@ -41,11 +41,11 @@ namespace eTamir.Services.Favorites.Services
                     favs.UserId = userId;
                 }
 
-                favs.FavItems.Add(favsRepository.Mapper.Map<FavItem>(favDto.FavItem));
+                favs.FavMechanicIds.Add(mechanicId);
 
                 await favsRepository.Collection.ReplaceOneAsync(x => x.UserId == favs.UserId, favs, new ReplaceOptions { IsUpsert = true });
 
-                return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
             }
             catch (Exception ex)
             {
@@ -55,7 +55,7 @@ namespace eTamir.Services.Favorites.Services
 
 
 
-        public async Task<Response<NoContent>> Delete(string userId, FavDto favDto)
+        public async Task<Response<NoContent>> Delete(string userId, string mechanicId)
         {
             try
             {
@@ -68,12 +68,12 @@ namespace eTamir.Services.Favorites.Services
                     return Response<NoContent>.Fail("No favorite mechanic found for the given user", 404);
                 }
 
-                var favItemToRemove = favs.FavItems.FirstOrDefault(t => t.MechanicId == favDto.FavItem.MechanicId);
+                var favItemToRemove = favs.FavMechanicIds.FirstOrDefault(t => t == mechanicId);
                 if (favItemToRemove != null)
                 {
-                    favs.FavItems.Remove(favItemToRemove);
+                    favs.FavMechanicIds.Remove(favItemToRemove);
                     await favsRepository.Collection.ReplaceOneAsync(x => x.UserId == favs.UserId, favs);
-                    return Response<NoContent>.Success(204);
+                    return Response<NoContent>.Success(200);
                 }
 
                 return Response<NoContent>.Fail("Favorite mechanic not found for the given user", 404);
@@ -85,12 +85,12 @@ namespace eTamir.Services.Favorites.Services
         }
 
 
-        public async Task<Response<bool>> IsFav(string userId,FavDto favDto)
+        public async Task<Response<bool>> IsFav(string userId, string mechanicId)
         {
             try
             {
                 var favs = await favsRepository.Collection
-                    .Find(x => x.UserId == userId && x.FavItems.Any(t => t.MechanicId == favDto.FavItem.MechanicId))
+                    .Find(x => x.UserId == userId && x.FavMechanicIds.Any(t => t == mechanicId))
                     .FirstOrDefaultAsync();
 
                 return Response<bool>.Success(200, favs != null);
@@ -101,19 +101,18 @@ namespace eTamir.Services.Favorites.Services
             }
         }
 
-        public async Task<Response<List<FavsDto>>> GetAll(string userId)
+        public async Task<Response<FavsDto>> GetAll(string userId)
         {
             try
             {
                 var favsList = await favsRepository.Collection
-                    .Find(x => x.UserId == userId)
-                    .ToListAsync();
+                    .Find(x => x.UserId == userId).FirstOrDefaultAsync();
 
-                return Response<List<FavsDto>>.Success(200, favsRepository.Mapper.Map<List<FavsDto>>(favsList));
+                return Response<FavsDto>.Success(200, favsRepository.Mapper.Map<FavsDto>(favsList));
             }
             catch
             {
-                return Response<List<FavsDto>>.Fail("Error while retrieving favorite mechanics", 500);
+                return Response<FavsDto>.Fail("Error while retrieving favorite mechanics", 500);
             }
         }
 

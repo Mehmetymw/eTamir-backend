@@ -8,6 +8,7 @@ namespace eTamir.Services.Catolog.Mapping
     {
         public GeneralMapping()
         {
+            CreateMap<Catalog,CatalogDto>().ReverseMap();
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Mechanic,MechanicDto>().ReverseMap();
         }

@@ -4,11 +4,9 @@ namespace eTamir.Services.Catolog.Models
 {
     public class WorkingHours
     {
-        public List<DayOfWeek> DaysOfWeek { get; set; }
-        public TimeSpan StartTime { get; set; }
-        public TimeSpan EndTime { get; set; }
+        public WorkingDate[] WorkingDates { get; set; }
         public int MaxAppointmentsPerDay { get; set; }
-        public double AppointmetnInterval { get; set; }
+        public double AppointmentInterval { get; set; }
         public bool IsActive { get; set; }
     }
 }

@@ -9389,11 +9389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\eTamir\\eTamir.backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
+      "projectUniqueName": "D:\\eTamir\\eTamir-backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
       "projectName": "eTamir.Services.Catolog",
-      "projectPath": "D:\\eTamir\\eTamir.backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
+      "projectPath": "D:\\eTamir\\eTamir-backend\\Services\\Catolog\\eTamir.Services.Catolog\\eTamir.Services.Catolog.csproj",
       "packagesPath": "C:\\Users\\meshm\\.nuget\\packages\\",
-      "outputPath": "D:\\eTamir\\eTamir.backend\\Services\\Catolog\\eTamir.Services.Catolog\\obj\\",
+      "outputPath": "D:\\eTamir\\eTamir-backend\\Services\\Catolog\\eTamir.Services.Catolog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\meshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9410,8 +9410,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
-              "projectPath": "D:\\eTamir\\eTamir.backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
+            "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj": {
+              "projectPath": "D:\\eTamir\\eTamir-backend\\Shared\\eTamir.Shared\\eTamir.Shared.csproj"
             }
           }
         }
@@ -9483,7 +9483,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

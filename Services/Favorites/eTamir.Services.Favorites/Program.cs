@@ -22,6 +22,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         options.Authority = builder.Configuration["IdentityServer:Url"];
         options.Audience = builder.Configuration["IdentityServer:Audience"];
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        {
+            ValidateIssuer = false
+        };
     });
 
 
@@ -39,7 +44,7 @@ builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 builder.Services.AddSingleton<IDatabaseSettings>(sp =>
     sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
 
-builder.Services.AddScoped<IFavsRepository<Favs>,FavsRepository>();
+builder.Services.AddScoped<IFavsRepository<Favs>, FavsRepository>();
 
 builder.Services.AddScoped<IFavsService, FavsService>();
 
@@ -56,7 +61,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.MapControllers();
 app.UseAuthorization();
 app.UseAuthentication();

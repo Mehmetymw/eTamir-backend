@@ -21,7 +21,13 @@ builder.Services.AddAuthentication()
     {
         options.Authority = builder.Configuration["IdentityServer:Url"];
         options.Audience = builder.Configuration["IdentityServer:Audience"];
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        {
+            ValidateIssuer = false
+        };
     });
+
 builder.Services.AddOcelot();
 
 var app = builder.Build();

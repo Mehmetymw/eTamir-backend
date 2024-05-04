@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\meshm\\Desktop\\eTamir\\eTamir.backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\albumart.png",
-      "PackagePath": "staticwebassets\\Photos\\albumart.png"
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\7ff4a0af37574af99ae5494646c18609.jpg",
+      "PackagePath": "staticwebassets\\Photos\\7ff4a0af37574af99ae5494646c18609.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\93656d04658b481c931aef171c74f91d.jpg",
+      "PackagePath": "staticwebassets\\Photos\\93656d04658b481c931aef171c74f91d.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.eTamir.Service.PhotoStcok.props",

@@ -33,21 +33,21 @@ namespace eTamir.Services.Favorites.Controllers
         {
             return CreateActionResult(await favService.GetAll(sharedIdentityService.UserId));
         }
-        [HttpPost("isFav")]
-        public async Task<IActionResult> IsFav(FavDto favDto)
+        [HttpPost("isFav/{mechanicId}")]
+        public async Task<IActionResult> IsFav(string mechanicId)
         {
-             return CreateActionResult(await favService.IsFav(sharedIdentityService.UserId,favDto));
+             return CreateActionResult(await favService.IsFav(sharedIdentityService.UserId,mechanicId));
         }
-        [HttpPost("add")]
-        public async Task<IActionResult> Add(FavDto favDto)
+        [HttpPost("add/{mechanicIdo}")]
+        public async Task<IActionResult> Add(string mechanicIdo)
         {
-            return CreateActionResult(await favService.Add(sharedIdentityService.UserId,favDto));
+            return CreateActionResult(await favService.Add(sharedIdentityService.UserId,mechanicIdo));
 
         }
-        [HttpDelete]
-        public async Task<IActionResult> Delete(FavDto favDto)
+        [HttpDelete("delete/{mechanicId}")]
+        public async Task<IActionResult> Delete(string mechanicId)
         {
-            return CreateActionResult(await favService.Delete(sharedIdentityService.UserId,favDto));
+            return CreateActionResult(await favService.Delete(sharedIdentityService.UserId,mechanicId));
         }
     }
 }
