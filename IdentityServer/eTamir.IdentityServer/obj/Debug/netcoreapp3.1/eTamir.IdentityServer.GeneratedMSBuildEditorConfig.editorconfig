@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = eTamir.IdentityServer
-build_property.ProjectDir = D:\eTamir\eTamir-backend\IdentityServer\eTamir.IdentityServer\
+build_property.ProjectDir = d:\eTamir\eTamir-backend\IdentityServer\eTamir.IdentityServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 
