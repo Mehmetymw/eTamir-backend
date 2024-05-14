@@ -2,6 +2,7 @@ using AutoMapper;
 using eTamir.Services.Address.Dtos;
 using eTamir.Services.Address.Models;
 
+
 namespace eTamir.Services.Address.Mapping
 {
     public class GeneralMapping : Profile
@@ -10,6 +11,7 @@ namespace eTamir.Services.Address.Mapping
         {
             CreateMap<Location, LocationDto>().ReverseMap();
             CreateMap<MechanicAddress, MechanicAddressDto>().ReverseMap();
+            CreateMap<NearAdderssDto, NearAdderss>().ReverseMap();
         }
     }
 }

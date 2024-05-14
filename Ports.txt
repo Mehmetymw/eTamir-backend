@@ -4,6 +4,8 @@ Services:
 	-Favorites: 5013
 	-Appointment: 5014
 	-Address : 5015
+	-Map : 5016
+	-Review : 5017
 
 IdentityServer: 5001
 

@@ -6,6 +6,7 @@ using eTamir.Services.Catolog.Dtos;
 using System.Security.Claims;
 using eTamir.Shared.Dtos;
 using eTamir.Shared.Services;
+using eTamir.Services.Catolog.Models;
 
 namespace eTamir.Services.Catolog.Controllers
 {
@@ -32,12 +33,25 @@ namespace eTamir.Services.Catolog.Controllers
         }
 
         [HttpGet("GetAllByUserId/{userId}")]
-        public async Task<IActionResult> GetAllByUserId(string userId)
+        public async Task<IActionResult> GetAllByUserId()
         {
-            var mechanics = await mechanicService.GetAllByUserId(userId);
+            var mechanics = await mechanicService.GetAllByUserId(sharedIdentityService.UserId);
 
             return CreateActionResult(mechanics);
         }
+
+        [HttpPost("GetNearLocations")]
+        public async Task<IActionResult> GetNearLocations([FromBody] NearLocationsRequest request)
+        {
+            if(request.AddressIds is null || request.AddressIds.Length == 0)
+            {
+                return CreateActionResult(Response<NoContent>.Fail("Adres bilgisi boş olamaz.", 200));
+            }
+            var mechanics = await mechanicService.GetNearLocations(request.AddressIds, request.CategoryId, request.Page, request.PageSize);
+
+            return CreateActionResult(mechanics);
+        }
+
 
         [HttpGet("GetPagesByCategoryId/{categoryId}/{page}/{pageSize}")]
         public async Task<IActionResult> GetPagesByCategoryId(string categoryId, int page, int pageSize)
@@ -50,7 +64,7 @@ namespace eTamir.Services.Catolog.Controllers
         [HttpGet("GetPagesByMechanicName/{mechanicName}/{categoryId}/{page}/{pageSize}")]
         public async Task<IActionResult> GetPagesByMechanicName(string mechanicName, string categoryId, int page, int pageSize)
         {
-            var mechanics = await mechanicService.GetPagesByMechanicName(mechanicName,categoryId, page, pageSize);
+            var mechanics = await mechanicService.GetPagesByMechanicName(mechanicName, categoryId, page, pageSize);
 
             return CreateActionResult(mechanics);
         }

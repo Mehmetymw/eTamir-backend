@@ -21,7 +21,7 @@ builder.Services
     {
         options.Authority = builder.Configuration["IdentityServer:Url"];
         options.Audience = builder.Configuration["IdentityServer:Audience"];
-        options.TokenValidationParameters.ValidateIssuer = false;
+        options.TokenValidationParameters.ValidIssuers = [builder.Configuration["IdentityServer:Url"], "http://10.0.2.2:5001"];
         options.RequireHttpsMetadata = false;
     });
 

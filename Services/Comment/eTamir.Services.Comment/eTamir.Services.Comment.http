@@ -1,0 +1,6 @@
+@eTamir.Services.Comment_HostAddress = http://localhost:5030
+
+GET {{eTamir.Services.Comment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

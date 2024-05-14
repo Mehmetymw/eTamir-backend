@@ -200,7 +200,7 @@ namespace eTamir.Services.Catolog.Services
         {
             try
             {
-                if(string.IsNullOrEmpty(mechanicName)) return await GetAllByCategoryId(categoryId);
+                if (string.IsNullOrEmpty(mechanicName)) return await GetAllByCategoryId(categoryId);
 
                 var mechanics = await mechanicRepository.Collection
                     .Find(t => t.Name.Contains(mechanicName, StringComparison.CurrentCultureIgnoreCase)).Skip((page - 1) * pageSize).Limit(pageSize).ToListAsync();
@@ -215,6 +215,26 @@ namespace eTamir.Services.Catolog.Services
                 return Response<List<MechanicDto>>
                     .Fail("Tamirci listesi getirilirken bir hata oluştu. ex:" + ex.ToString(), 500);
             }
+        }
+
+        public async Task<Response<List<MechanicDto>>> GetNearLocations(string[] addressIds, string categoryId, int page, int pageSize)
+        {
+            try
+            {
+                if (addressIds is null || addressIds.Length== 0) return default;
+
+                var mechanics = await mechanicRepository.Collection
+                    .Find(t => addressIds.Contains(t.AddressId) && string.Equals(categoryId, t.CategoryId)).Skip((page - 1) * pageSize).Limit(pageSize).ToListAsync();
+
+                return Response<List<MechanicDto>>
+                    .Success(200, mechanicRepository.Mapper.Map<List<MechanicDto>>(mechanics));
+            }
+            catch (Exception ex)
+            {
+                return Response<List<MechanicDto>>
+                    .Fail("Tamirci listesi getirilirken bir hata oluştu. ex:" + ex.ToString(), 500);
+            }
+
         }
     }
 }

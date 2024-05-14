@@ -77,6 +77,22 @@ namespace eTamir.IdentityServer.Controllers
             return Ok(appUser);
         }
 
+        
+        [HttpGet]
+        public async Task<IActionResult> GetUserById(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user is null) return BadRequest();
+
+            var appUser = new
+            {
+                Name = user.Name,
+                Surname = user.Surname,
+            };
+
+            return Ok(appUser);
+        }
+
         // [HttpPost]
         // public async Task<IActionResult> GoogleLogin(string idToken)
         // {

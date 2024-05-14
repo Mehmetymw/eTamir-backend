@@ -1,0 +1,6 @@
+@eTamir.Services.Map_HostAddress = http://localhost:5105
+
+GET {{eTamir.Services.Map_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

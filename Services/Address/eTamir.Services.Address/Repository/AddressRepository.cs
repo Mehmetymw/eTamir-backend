@@ -19,7 +19,7 @@ namespace eTamir.Services.Address.Repository
             var client = new MongoClient(dbSettings.ConnectionString);
             var database = client.GetDatabase(dbSettings.DatabaseName);
 
-            LocationCollection = database.GetCollection<Location>(dbSettings.LocationCollectionName);
+            LocationCollection = database.GetCollection<Location>(dbSettings.AddressCollectionName);
             CountryCollection = database.GetCollection<Country>(dbSettings.CountriesCollectionName);
             StateCollection = database.GetCollection<State>(dbSettings.StatesCollectionName);
             CityCollection = database.GetCollection<City>(dbSettings.CitiesCollectionName);

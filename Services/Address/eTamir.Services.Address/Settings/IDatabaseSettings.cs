@@ -2,7 +2,7 @@
 {
     public interface IDatabaseSettings
     {
-        public string LocationCollectionName { get; set; }
+        public string AddressCollectionName { get; set; }
         public string CatalogCollectionName { get; set; }
         public string CountriesCollectionName { get; set; }
         public string StatesCollectionName { get; set; }

@@ -5,18 +5,21 @@ using eTamir.Services.Address.Services;
 using eTamir.Shared.Controller;
 using eTamir.Shared.Dtos;
 using eTamir.Services.Address.Dtos;
+using eTamir.Shared.Services;
 
 namespace eTamir.Services.Address.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class AddressController : CustomControllerBase
+    public class AddressController : CustomControllerBase 
     {
         private readonly IAddressService addressService;
+        private readonly ISharedIdentityService sharedIdentityService;
 
-        public AddressController(IAddressService addressService)
+        public AddressController(IAddressService addressService, ISharedIdentityService sharedIdentityService)
         {
             this.addressService = addressService;
+            this.sharedIdentityService = sharedIdentityService;
         }
 
         [HttpGet("{id}")]
@@ -40,6 +43,21 @@ namespace eTamir.Services.Address.Controllers
             }
 
             return CreateActionResult(Response<string>.Success(200, id));
+        }
+
+        [HttpPost("near")]
+        public async Task<IActionResult> GetNearAddress(NearAdderss nearAdderss)
+        {
+            if (nearAdderss.Coordinates == null)
+            {
+                return CreateActionResult(Response<NoContent>.Fail("Coordinates not found", 404));
+            }
+            var address = await addressService.GetNearbyAddresses(nearAdderss.Coordinates, nearAdderss.Proximity);
+            if (address == null)
+            {
+                return CreateActionResult(Response<NoContent>.Fail("Address not found", 404));
+            }
+            return CreateActionResult(Response<List<string>>.Success(200, address));
         }
 
         [HttpGet("countries")]
@@ -76,7 +94,7 @@ namespace eTamir.Services.Address.Controllers
             {
                 return CreateActionResult(Response<NoContent>.Fail("City not found", 404));
             }
-            return CreateActionResult(Response<List<City>>.Success(200,cities));
+            return CreateActionResult(Response<List<City>>.Success(200, cities));
         }
 
         [HttpGet("states")]

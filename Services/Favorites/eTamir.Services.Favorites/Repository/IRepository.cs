@@ -1,7 +1,7 @@
 using AutoMapper;
 using MongoDB.Driver;
 
-namespace eTamir.Services.Catolog.Repository
+namespace eTamir.Services.Favorites.Repository
 {
     public interface IRepository<T>
     {

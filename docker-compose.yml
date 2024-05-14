@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  catalogdb:
+    image: "mongo"
+  identitydb:
+    image: "postgres:16.2-alpine3.19"
+  rabbitmq:
+    image: "rabbitmq:3-management"
+
+volumes:
+  catalogdb_volume:
+  identitydb_volume:
+  rabbitmq_volume:
+
+  
+
+  

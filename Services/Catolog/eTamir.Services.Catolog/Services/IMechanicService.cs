@@ -11,6 +11,7 @@ namespace eTamir.Services.Catolog.Services
         public Task<Response<List<T>>> GetPagesByCategoryId(string categoryId, int page, int pageSize);
         public Task<Response<List<T>>> GetAllByCategoryId(string categoryId);
         public Task<Response<List<T>>> GetPagesByMechanicName(string mechanicName, string categoryId, int page, int pageSize);
+        public Task<Response<List<T>>> GetNearLocations(string[] addressIds, string categoryId, int page, int pageSize);
 
     }
 }

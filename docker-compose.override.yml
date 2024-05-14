@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  catalogdb:
+    container_name: "catalogdb"
+    restart: "always"
+    ports: 
+      - "27017:27017"
+    volumes:
+      - catalogdb_volume:/data/db
+  identitydb:
+    container_name: "identitydb"
+    restart: "always"
+    ports: 
+      - "5432:5432"
+    volumes:
+      - "identitydb_volume:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=identitydb
+  rabbitmq:
+    container_name: "rabbitmq"
+    restart: "always"
+    ports: 
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - "rabbitmq_volume:/var/lib/rabbitmq"
+    
+    
+
+  

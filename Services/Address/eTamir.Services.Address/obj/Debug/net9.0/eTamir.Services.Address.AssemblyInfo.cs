@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTamir.Services.Address")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ce1073c2f9b084e2078682f5e6e5bb8593b68e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ca2e8b1a910a3ca05b6e61b57b901d58c46fdd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTamir.Services.Address")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTamir.Services.Address")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

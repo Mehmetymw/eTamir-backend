@@ -1,4 +1,6 @@
+using eTamir.Services.Address.Models;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace eTamir.Services.Address.Models
 {
@@ -7,8 +9,8 @@ namespace eTamir.Services.Address.Models
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string Id { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+        public string type  { get; set; } = "Point";
+        public double[] Coordinates { get; set; }
         public MechanicAddress Address { get; set; }
     }
 

@@ -6,6 +6,7 @@ using eTamir.Services.Address.Repository;
 using eTamir.Services.Address.Settings;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Driver.GeoJsonObjectModel;
 
 namespace eTamir.Services.Address.Services
 {
@@ -79,6 +80,28 @@ namespace eTamir.Services.Address.Services
         {
             var states = await addressRepository.StateCollection.Find(state => state.CountryId == id).ToListAsync();
             return states;
+        }
+
+        public async Task<List<string>> GetNearbyAddresses(double[] coordinates, double proximity)
+        {
+            try
+            {
+                await addressRepository.LocationCollection.Indexes.CreateManyAsync(
+                            [
+                               new CreateIndexModel<Location>(Builders<Location>.IndexKeys.Geo2DSphere(l => l.Coordinates))
+                           ]);
+
+                var point = GeoJson.Point(GeoJson.Geographic(coordinates[0], coordinates[1]));
+                var filter = Builders<Location>.Filter.NearSphere(l => l.Coordinates, point, proximity*1000);
+                var nearbyAddresses = await addressRepository.LocationCollection.Find(filter).Project(l => l.Id).ToListAsync();
+
+                return nearbyAddresses;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("An error occurred while getting nearby addresses.", ex);
+            }
+
         }
     }
 

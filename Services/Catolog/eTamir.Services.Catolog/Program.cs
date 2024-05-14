@@ -25,16 +25,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.RequireHttpsMetadata = false;
         options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
         {
-            ValidateIssuer = false
+            ValidIssuers = [builder.Configuration["IdentityServer:Url"], "http://10.0.2.2:5001"]
         };
 
     });
 
-builder.Services.AddControllers();
-
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add(new AuthorizeFilter());
+}).AddJsonOptions(options =>
+{
+    // options.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
 
 builder.Services.AddEndpointsApiExplorer();

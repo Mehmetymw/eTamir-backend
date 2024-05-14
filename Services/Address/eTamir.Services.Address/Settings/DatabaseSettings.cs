@@ -8,6 +8,6 @@
         public string CitiesCollectionName { get; set; }
         public string DatabaseName { get; set; }
         public string ConnectionString { get; set; }
-        public string LocationCollectionName { get; set; }
+        public string AddressCollectionName { get; set; }
     }
 }

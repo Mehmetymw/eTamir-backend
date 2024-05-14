@@ -1,6 +1,7 @@
 using eTamir.Services.Address.Repository;
 using eTamir.Services.Address.Services;
 using eTamir.Services.Address.Settings;
+using eTamir.Shared.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Options;
@@ -15,7 +16,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.RequireHttpsMetadata = false;
         options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
         {
-            ValidateIssuer = false
+            ValidIssuers = [builder.Configuration["IdentityServer:Url"], "http://10.0.2.2:5001"]
         };
 
     });
@@ -31,10 +32,11 @@ builder.Services.AddSingleton<IDatabaseSettings>(sp =>
 
 builder.Services.AddScoped<AddressRepository>();
 builder.Services.AddScoped<IAddressService, AddressService>();
-
+builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

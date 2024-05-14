@@ -18,6 +18,23 @@
             }
         },
         {
+            "DownstreamPathTemplate": "/api/user/GetUserById",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/user/GetUserById",
+            "UpstreamHttpMethod": [ "Get"],
+            "UpstreamScheme": "http",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+                "AllowedScopes": ["IdentityServerApi"]
+            }
+        },
+        {
             "DownstreamPathTemplate": "/api/{everything}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
@@ -49,6 +66,40 @@
             "AuthenticationOptions": {
                 "AuthenticationProviderKey": "GatewayAuthenticationScheme",
                 "AllowedScopes": ["address_fullpermission"]
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5016
+                }
+            ],
+            "UpstreamPathTemplate": "/services/map/{everything}",
+            "UpstreamHttpMethod": ["Get","Post","Put"],
+            "UpstreamScheme": "http",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+                "AllowedScopes": ["map_fullpermission"]
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5017
+                }
+            ],
+            "UpstreamPathTemplate": "/services/review/{everything}",
+            "UpstreamHttpMethod": ["Get","Post","Put","Delete"],
+            "UpstreamScheme": "http",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "GatewayAuthenticationScheme",
+                "AllowedScopes": ["review_fullpermission"]
             }
         },
         {

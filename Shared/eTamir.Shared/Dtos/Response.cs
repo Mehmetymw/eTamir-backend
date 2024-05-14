@@ -35,5 +35,15 @@ namespace eTamir.Shared.Dtos
                 IsSuccessful = true
             };
         }
+        public static Response<T> Success(int statusCode, string message, T data = default)
+        {
+            return new Response<T>
+            {
+                Data = data,
+                StatusCode = statusCode,
+                IsSuccessful = true,
+                Errors = new List<string> { message }
+            };
+        }
     }
 }

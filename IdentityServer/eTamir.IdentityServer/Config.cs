@@ -14,11 +14,14 @@ namespace eTamir.IdentityServer
     {
         public const string CatalogPermission = "catalog_fullpermission";
         public const string AddressPermission = "address_fullpermission";
+        public const string LocationPermission = "location_fullpermission"; 
+        public const string MapPermission = "map_fullpermission";
         public const string PhotoStockPermission = "photo_stock_fullpermission";
         public const string FavPermission = "fav_fullpermission";
         public const string AppointmetnPermission = "appointment_fullpermission";
         public const string GatewayPermission = "gateway_fullpermission";
         public const string IdentityResourceRole = "roles";
+        public const string ReviewPermission = "review_fullpermission";
         public static IEnumerable<ApiResource> ApiResources =>
                    new ApiResource[]{
                         new ApiResource("resource_catalog"){
@@ -31,7 +34,16 @@ namespace eTamir.IdentityServer
                                 AddressPermission
                             }
                         },
-
+                        new ApiResource("resource_location"){
+                            Scopes = {
+                                LocationPermission
+                            }
+                        },
+                        new ApiResource("resource_map"){
+                            Scopes = {
+                                MapPermission
+                            }
+                        },
                         new ApiResource("resource_photo_stock"){
                             Scopes = {
                                 PhotoStockPermission
@@ -52,6 +64,12 @@ namespace eTamir.IdentityServer
                                 GatewayPermission
                             }
                         },
+                        new ApiResource("resource_review"){
+                            Scopes = {
+                                ReviewPermission
+                            }
+                        },
+
                         new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
                    };
 
@@ -80,7 +98,10 @@ namespace eTamir.IdentityServer
                 new ApiScope(FavPermission, "Fav API için full erişim"),
                 new ApiScope(AppointmetnPermission, "Appointment API için full erişim"),
                 new ApiScope(GatewayPermission, "Gateway API için full erişim"),
-                new ApiScope(AddressPermission, "Address API için full erişim")
+                new ApiScope(AddressPermission, "Address API için full erişim"),
+                new ApiScope(LocationPermission, "Location API için full erişim"),
+                new ApiScope(MapPermission, "Map API için full erişim"),
+                new ApiScope(ReviewPermission, "Comment API için full erişim")
             };
 
 
@@ -100,6 +121,8 @@ namespace eTamir.IdentityServer
                         CatalogPermission,
                         PhotoStockPermission,
                         AddressPermission,
+                        LocationPermission,
+                        MapPermission,
                         IdentityServerConstants.LocalApi.ScopeName,
                     }
                 },
@@ -125,7 +148,10 @@ namespace eTamir.IdentityServer
                         FavPermission,
                         AppointmetnPermission,
                         GatewayPermission,
-                        AddressPermission
+                        AddressPermission,
+                        LocationPermission,
+                        MapPermission,
+                        ReviewPermission
                     },
                     AccessTokenLifetime = 1 * 60 * 60,
                     RefreshTokenExpiration = TokenExpiration.Absolute,

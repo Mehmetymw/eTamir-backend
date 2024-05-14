@@ -1,5 +1,5 @@
 using AutoMapper;
-using eTamir.Services.Catolog.Repository;
+using eTamir.Services.Favorites.Repository;
 using eTamir.Services.Favorites.Dtos;
 using eTamir.Services.Favorites.Models;
 using eTamir.Services.Favorites.Settings;
