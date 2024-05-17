@@ -1,10 +1,11 @@
-namespace eTamir.Services.Appointment.Settings 
+namespace eTamir.Services.Appointment.Settings
 {
-     internal class DatabaseSettings : IDatabaseSettings
+    internal class DatabaseSettings : IDatabaseSettings
     {
-        public string FavoritesCollectionName {get;set;}
-        public string DatabaseName {get;set;}
+        public string DatabaseName { get; set; }
         public string ConnectionString { get; set; }
+        public string WorkingHoursCollectionName { get; set; }
+        public string AppointmentsCollectionName { get; set; }
     }
 
 }

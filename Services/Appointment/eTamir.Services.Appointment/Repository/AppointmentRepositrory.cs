@@ -7,9 +7,9 @@ using MongoDB.Driver;
 
 namespace eTamir.Services.Appointment.Repository
 {
-   public class AppointmentRepository : IAppointmentRepository<Appointments>
+   public class AppointmentRepository : IAppointmentRepository<Models.Appointment>
     {
-        public IMongoCollection<Appointments> Collection { get; }
+        public IMongoCollection<Models.Appointment> Collection { get; }
 
         public IMapper Mapper {  get; }
         public AppointmentRepository(IMapper mapper, IDatabaseSettings dbSettins)
@@ -17,7 +17,7 @@ namespace eTamir.Services.Appointment.Repository
             var client = new MongoClient(dbSettins.ConnectionString);
             var database = client.GetDatabase(dbSettins.DatabaseName);
 
-            Collection = database.GetCollection<Appointments>(dbSettins.FavoritesCollectionName);
+            Collection = database.GetCollection<Models.Appointment>(dbSettins.AppointmentsCollectionName);
             Mapper = mapper;
         }
     }

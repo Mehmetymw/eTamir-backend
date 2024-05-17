@@ -10,6 +10,7 @@ using eTamir.Shared.Controller;
 using eTamir.Shared.Dtos;
 using eTamir.Shared.Services;
 using Microsoft.AspNetCore.Mvc;
+using eTamir.Services.Appointment.Models;
 
 namespace eTamir.Services.Appointment.Controllers
 {
@@ -23,7 +24,7 @@ namespace eTamir.Services.Appointment.Controllers
         {
             this.sharedIdentityService = sharedIdentityService;
             this.appointmentService = appointmentService;
-            
+
         }
 
         [HttpGet]
@@ -31,21 +32,31 @@ namespace eTamir.Services.Appointment.Controllers
         {
             return CreateActionResult(await appointmentService.GetAll(sharedIdentityService.UserId));
         }
-        [HttpPost("isAvailible")]
-        public async Task<IActionResult> IsAvailible(AppointmentDto appointmentDto)
+
+        [HttpGet("{mechanicId}")]
+        public async Task<IActionResult> GetAllByMechanic(string mechanicId)
         {
-             return CreateActionResult(await appointmentService.IsAvailible(sharedIdentityService.UserId,appointmentDto));
+            var data = await appointmentService.GetAllByMechanic(mechanicId);
+            return CreateActionResult(data);
         }
-        [HttpPost("add")]
-        public async Task<IActionResult> Add(AppointmentDto appointmentDto)
+
+        [HttpPost]
+        public async Task<IActionResult> Send(AppointmentDto appointmentDto)
         {
-            return CreateActionResult(await appointmentService.Add(sharedIdentityService.UserId,appointmentDto));
+            return CreateActionResult(await appointmentService.Send(sharedIdentityService.UserId, appointmentDto));
 
         }
-        [HttpDelete]
-        public async Task<IActionResult> Delete(AppointmentDto appointmentDto)
+
+        [HttpPut]
+        public async Task<IActionResult> Update(AppointmentUpdateDto appointmentUpdateDto)
         {
-            return CreateActionResult(await appointmentService.Delete(sharedIdentityService.UserId,appointmentDto));
+            return CreateActionResult(await appointmentService.Update(appointmentUpdateDto));
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            return CreateActionResult(await appointmentService.Delete(sharedIdentityService.UserId, id));
         }
     }
 }

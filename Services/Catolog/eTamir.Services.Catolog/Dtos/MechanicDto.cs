@@ -23,8 +23,8 @@ namespace eTamir.Services.Catolog.Dtos
         public string CategoryId { get; set; }
         [Required]
         public string CatalogId { get; set; }
+        public  string WorkingHoursId  { get; set;}
         public string? UserId { get; set; }
-        public WorkingHours WorkingHours { get; set; }
         public byte CountryCode { get; set; }
         public long PhoneNumber { get; set; }
         [BsonIgnore]

@@ -1,8 +1,28 @@
 {
   "Files": [
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\022e5d63a05d469d9d8c48b588701c9e.jpg",
+      "PackagePath": "staticwebassets\\Photos\\022e5d63a05d469d9d8c48b588701c9e.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\0787425cbda948d9a689b0dd0a5aa20e.jpg",
+      "PackagePath": "staticwebassets\\Photos\\0787425cbda948d9a689b0dd0a5aa20e.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\08aa0189987148f5ae5b0e348be9187f.jpg",
       "PackagePath": "staticwebassets\\Photos\\08aa0189987148f5ae5b0e348be9187f.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\0b03285fdaca480185dcdcba38fbfd26.jpg",
+      "PackagePath": "staticwebassets\\Photos\\0b03285fdaca480185dcdcba38fbfd26.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\0cda29d4cfae43dea9ca94b5785588e1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\0cda29d4cfae43dea9ca94b5785588e1.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\1095d5e180bb4a0f960216b5ff6fbac1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\1095d5e180bb4a0f960216b5ff6fbac1.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\1358d25cc1784528adb4a07d0e024d81.jpg",
@@ -25,12 +45,24 @@
       "PackagePath": "staticwebassets\\Photos\\244621352fdf4d46990132cf3c5c132d.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\263715294a2a4cb9bd6ec344289f8535.jpg",
+      "PackagePath": "staticwebassets\\Photos\\263715294a2a4cb9bd6ec344289f8535.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\26488a96a97a4086aadb3ae93dea2fb7.jpg",
       "PackagePath": "staticwebassets\\Photos\\26488a96a97a4086aadb3ae93dea2fb7.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\2ae6b379e33d496d8182ee0ddea5d887.jpg",
       "PackagePath": "staticwebassets\\Photos\\2ae6b379e33d496d8182ee0ddea5d887.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\2bcace0fecea4ffa9a7a1dbc0920f326.jpg",
+      "PackagePath": "staticwebassets\\Photos\\2bcace0fecea4ffa9a7a1dbc0920f326.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\2dfe698a804349218418a6ba808c493a.jpg",
+      "PackagePath": "staticwebassets\\Photos\\2dfe698a804349218418a6ba808c493a.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\2e3f53a77a12448293edf69bc786e4a5.jpg",
@@ -41,8 +73,16 @@
       "PackagePath": "staticwebassets\\Photos\\391a1c4ed1a6434bb4c4778b883e2757.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\3fb141fde546483098dc6ffbbaeb3de3.jpg",
+      "PackagePath": "staticwebassets\\Photos\\3fb141fde546483098dc6ffbbaeb3de3.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\3fda6eb0578544ac8f1a7aeea56f9e44.jpg",
       "PackagePath": "staticwebassets\\Photos\\3fda6eb0578544ac8f1a7aeea56f9e44.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\4900a229ef564387afd16588eab79cfd.jpg",
+      "PackagePath": "staticwebassets\\Photos\\4900a229ef564387afd16588eab79cfd.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\4929ae450e1844c79a571ede0f206a44.jpg",
@@ -53,8 +93,20 @@
       "PackagePath": "staticwebassets\\Photos\\4a0c8fef2bb54ef88a8388a9c157925b.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\4e8ba33676e34ca48759dc69df2f7dea.jpg",
+      "PackagePath": "staticwebassets\\Photos\\4e8ba33676e34ca48759dc69df2f7dea.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\4f5ef51cf10f456bad10696af0690b02.jpg",
+      "PackagePath": "staticwebassets\\Photos\\4f5ef51cf10f456bad10696af0690b02.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\4fc4d596ff464236a1f15301879161d6.jpg",
       "PackagePath": "staticwebassets\\Photos\\4fc4d596ff464236a1f15301879161d6.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\509509f516eb46079de3536d06d81518.jpg",
+      "PackagePath": "staticwebassets\\Photos\\509509f516eb46079de3536d06d81518.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\57b3532c379d459398c33f657b2a8e22.jpg",
@@ -63,6 +115,10 @@
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\59437984753b44ecba57727a59c9e885.jpg",
       "PackagePath": "staticwebassets\\Photos\\59437984753b44ecba57727a59c9e885.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\5a01126f72c246259a0206c58f9aa125.jpg",
+      "PackagePath": "staticwebassets\\Photos\\5a01126f72c246259a0206c58f9aa125.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\5af8bc958b014f30a3e6cfefe898ec5c.jpg",
@@ -81,6 +137,14 @@
       "PackagePath": "staticwebassets\\Photos\\5e78976eece8431a815346c3059006b3.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\5f448f6ac24d4e0899fbf208923a4ea2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\5f448f6ac24d4e0899fbf208923a4ea2.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\6360a1bd3dc7415b87eaf92d0c9dc3d1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\6360a1bd3dc7415b87eaf92d0c9dc3d1.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\6580da7f529d4f30aa9f71a913c844db.jpg",
       "PackagePath": "staticwebassets\\Photos\\6580da7f529d4f30aa9f71a913c844db.jpg"
     },
@@ -89,8 +153,28 @@
       "PackagePath": "staticwebassets\\Photos\\66d1886266824dd38d0985dedd59bc86.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\686b0c21da4547abb4a07ceedfc168e8.jpg",
+      "PackagePath": "staticwebassets\\Photos\\686b0c21da4547abb4a07ceedfc168e8.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\6967d27bdacc4703b77309a5082a222b.jpg",
+      "PackagePath": "staticwebassets\\Photos\\6967d27bdacc4703b77309a5082a222b.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\6c25652a5fd4493595a15e4a3f6516b5.jpg",
       "PackagePath": "staticwebassets\\Photos\\6c25652a5fd4493595a15e4a3f6516b5.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\70eeac9dcc18451c9a23a2689d0e4459.jpg",
+      "PackagePath": "staticwebassets\\Photos\\70eeac9dcc18451c9a23a2689d0e4459.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\7801cb7e2dcb41c9b01bff80057f7710.jpg",
+      "PackagePath": "staticwebassets\\Photos\\7801cb7e2dcb41c9b01bff80057f7710.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\7981f2847a0e43d1a63379d747955c9f.jpg",
+      "PackagePath": "staticwebassets\\Photos\\7981f2847a0e43d1a63379d747955c9f.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\7f674c83b8604c4486cc8c3aa0797f87.jpg",
@@ -113,8 +197,16 @@
       "PackagePath": "staticwebassets\\Photos\\8b63df640b70440681119b16459e202e.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\8e8f4eb06c3f47b5a0de2197b22bfa3e.jpg",
+      "PackagePath": "staticwebassets\\Photos\\8e8f4eb06c3f47b5a0de2197b22bfa3e.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\93656d04658b481c931aef171c74f91d.jpg",
       "PackagePath": "staticwebassets\\Photos\\93656d04658b481c931aef171c74f91d.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\93c2f554de074a70a29370fd989c2397.jpg",
+      "PackagePath": "staticwebassets\\Photos\\93c2f554de074a70a29370fd989c2397.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\9539421de6124e8bb1059b1e512b7e53.jpg",
@@ -129,6 +221,14 @@
       "PackagePath": "staticwebassets\\Photos\\a63230296ddf4a99bb72e9b585ced776.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\afa1ad77dc234eaab793efb96fad864b.jpg",
+      "PackagePath": "staticwebassets\\Photos\\afa1ad77dc234eaab793efb96fad864b.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\b797f855af85492a810855b148da7d49.jpg",
+      "PackagePath": "staticwebassets\\Photos\\b797f855af85492a810855b148da7d49.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\c4592426fbb14cacbef09c93693ddaa2.jpg",
       "PackagePath": "staticwebassets\\Photos\\c4592426fbb14cacbef09c93693ddaa2.jpg"
     },
@@ -137,12 +237,24 @@
       "PackagePath": "staticwebassets\\Photos\\c6629a8b36024b53ae0fac6f695e891f.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\c6a7151ff58642689bbd3fd6bceceb92.jpg",
+      "PackagePath": "staticwebassets\\Photos\\c6a7151ff58642689bbd3fd6bceceb92.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\c8e6df12c92c43a2acd10fe7738d6bbb.jpg",
       "PackagePath": "staticwebassets\\Photos\\c8e6df12c92c43a2acd10fe7738d6bbb.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\c9256f86421a423a9467451205e5ee9d.jpg",
       "PackagePath": "staticwebassets\\Photos\\c9256f86421a423a9467451205e5ee9d.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\ca324a0975504db7be3ee31657031f46.jpg",
+      "PackagePath": "staticwebassets\\Photos\\ca324a0975504db7be3ee31657031f46.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\ccaf340030cb439e81042e7fe41e58cb.jpg",
+      "PackagePath": "staticwebassets\\Photos\\ccaf340030cb439e81042e7fe41e58cb.jpg"
     },
     {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\cf4f10a4d1524f02ac9f4404f8197ab2.jpg",
@@ -157,6 +269,18 @@
       "PackagePath": "staticwebassets\\Photos\\d53ac7b5449243c28959bfc88a8900a8.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\d590fb5f59314fd6bc07fbe68ace5807.jpg",
+      "PackagePath": "staticwebassets\\Photos\\d590fb5f59314fd6bc07fbe68ace5807.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\d8ae2c09649f4ce5b920aaa8aa4957d9.jpg",
+      "PackagePath": "staticwebassets\\Photos\\d8ae2c09649f4ce5b920aaa8aa4957d9.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\d99d0b1c8fae4e15a13f0be612ffcbc1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\d99d0b1c8fae4e15a13f0be612ffcbc1.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\dde82b221c7e40ca8e9b2474fe137617.jpg",
       "PackagePath": "staticwebassets\\Photos\\dde82b221c7e40ca8e9b2474fe137617.jpg"
     },
@@ -165,8 +289,24 @@
       "PackagePath": "staticwebassets\\Photos\\e1603b765690429b8df18cb5a2938cd2.jpg"
     },
     {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\e16e443848bb4c27a9e1996ba964e07a.jpg",
+      "PackagePath": "staticwebassets\\Photos\\e16e443848bb4c27a9e1996ba964e07a.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\ee8264669d2d461eb986b8afb3df4c75.jpg",
+      "PackagePath": "staticwebassets\\Photos\\ee8264669d2d461eb986b8afb3df4c75.jpg"
+    },
+    {
       "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\f66822ea7d234a38b5e01b7d60508c02.jpg",
       "PackagePath": "staticwebassets\\Photos\\f66822ea7d234a38b5e01b7d60508c02.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\f74668e0a2f54d068bc49c41d87b504c.jpg",
+      "PackagePath": "staticwebassets\\Photos\\f74668e0a2f54d068bc49c41d87b504c.jpg"
+    },
+    {
+      "Id": "D:\\eTamir\\eTamir-backend\\Services\\PhotoStock\\eTamir.Service.PhotoStcok\\wwwroot\\Photos\\fe77be85ae26447b9334d779bd13108b.jpg",
+      "PackagePath": "staticwebassets\\Photos\\fe77be85ae26447b9334d779bd13108b.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.eTamir.Service.PhotoStcok.props",

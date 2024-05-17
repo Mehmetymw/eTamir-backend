@@ -24,15 +24,15 @@ namespace eTamir.Services.Catolog.Controllers
             this.httpContextAccessor = httpContextAccessor;
             this.sharedIdentityService = sharedIdentityService;
         }
+        // [HttpGet]
+        // public async Task<IActionResult> GetAll()
+        // {
+        //     var mechanics = await mechanicService.GetAllAsync();
+
+        //     return CreateActionResult(mechanics);
+        // }
+
         [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            var mechanics = await mechanicService.GetAllAsync();
-
-            return CreateActionResult(mechanics);
-        }
-
-        [HttpGet("GetAllByUserId/{userId}")]
         public async Task<IActionResult> GetAllByUserId()
         {
             var mechanics = await mechanicService.GetAllByUserId(sharedIdentityService.UserId);

@@ -7,10 +7,11 @@ namespace eTamir.Services.Appointment.Services
 {
     public interface IAppointmentService
     {
-        Task<Response<List<AppointmentsDto>>> GetAll(string userId);
-        Task<Response<bool>> IsAvailible(string userId,AppointmentDto favDto);
-        Task<Response<NoContent>> Add(string userId,AppointmentDto favDto);
-        Task<Response<NoContent>> Delete(string userId, AppointmentDto favDto);
-        
+        Task<Response<List<Appointment.Models.Appointment>>> GetAll(string userId);
+        Task<Response<List<Appointment.Models.Appointment>>> GetAllByMechanic(string mechanicId);
+        Task<Response<NoContent>> Send(string userId, AppointmentDto favDto);
+        Task<Response<NoContent>> Update(AppointmentUpdateDto appointmentUpdateDto);
+        Task<Response<NoContent>> Delete(string userId, string id);
+
     }
 }

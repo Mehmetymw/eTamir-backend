@@ -24,9 +24,8 @@ namespace eTamir.Services.Catolog.Models
         public string CatalogId { get; set; }
         [BsonIgnore]
         public Category Category { get; set; }
-        public WorkingHours WorkingHours { get; set; }
         public string UserId { get; set; }
-
+        public string WorkingHoursId { get; set; }
         public byte CountryCode { get; set; }
         public long PhoneNumber { get; set; }
 

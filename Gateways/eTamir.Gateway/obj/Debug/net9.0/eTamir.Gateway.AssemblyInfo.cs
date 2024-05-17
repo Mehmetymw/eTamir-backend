@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTamir.Gateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ca2e8b1a910a3ca05b6e61b57b901d58c46fdd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bb1862de2c3e09f9229021ca8c6c93eb948e083")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTamir.Gateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTamir.Gateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

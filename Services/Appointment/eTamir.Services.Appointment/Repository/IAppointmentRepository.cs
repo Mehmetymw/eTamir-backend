@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace eTamir.Services.Appointment.Repository
 {
-    public interface IAppointmentRepository<T> : IRepository<T> where T : Appointments
+    public interface IAppointmentRepository<T> : IRepository<T> where T : Appointment.Models.Appointment
     {
         public IMongoCollection<T> Collection { get; }
         public IMapper Mapper { get; }
